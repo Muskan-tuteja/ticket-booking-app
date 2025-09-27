@@ -28,55 +28,55 @@ export const dummyTrailers = [
 
 
 
-// src/assets/assets.js
+
 
 const dummyCastsData = [
   {
-    "name": "Robert Downey Jr."," profile_path":
+    "name": "Robert Downey Jr.", "profile_path":
       "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
   },
   {
-    "name": "Azaad."," profile_path":
-      "https://cms.patrika.com/wp-content/uploads/2025/01/Upcoming-Movies-in-January-2025.jpg",
+    "name": "Azaad.", "profile_path":
+     "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
   },
   {
-    "name": "Rakkayie"," profile_path":
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA5lVkxLc2ZW_QNyTMcm1u01daICBIdzOYsy6xVaP47Igp8mSXEn1gDWlIczFyfkqVpF4&usqp=CAU",
+    "name": "Rakkayie", "profile_path":
+     "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
   },
   {
-    "name": "Ghaati"," profile_path":
-      "https://m.media-amazon.com/images/M/MV5BZmZlYjY5NDctMDk5NS00MDY0LWE5MzUtMzViZWNhYjI4NjI1XkEyXkFqcGc@._V1_.jpg",
+    "name": "Ghaati", "profile_path":
+      "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
   },
   {
-    "name": "Obela"," profile_path":
-      "https://images.filmibeat.com/img/popcorn/list_items/upcoming-telugu-big-budget-movies-releasing-in-summer-2025-%E2%80%93-full-list-inside-20250331110945-7211.jpg",
+    "name": "Obela", "profile_path":
+      "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
   },
   {
-    "name": "Son of Sardaar"," profile_path":
-      "https://m.media-amazon.com/images/M/MV5BMjRjODY3MTQtZGQ3Ny00N2Y3LTk3MmUtZTFkOWU1ZTg1MjcxXkEyXkFqcGc@._V1_.jpg",
+    "name": "Son of Sardaar", "profile_path":
+    "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
   },
   {
-    "name": "Avatar"," profile_path":
+    "name": "Avatar", "profile_path":
       "https://www.tallengestore.com/cdn/shop/products/Avatar_9ea2c3a8-930b-4c06-866f-7e417ddde0d7.jpg?v=1634645786",
   },
   {
-    "name": "Jumanji"," profile_path":
-      "https://qqcdnpictest.mxplay.com/pic/bce7ae02445dad432bdab581e180ceef/en/2x3/312x468/d5f863cd13cc307123989701f8b72fdf_1280x1920.webp",
-  },
-  {
-    "name": "stree2"," profile_path":
+    "name": "Jumanji", "profile_path":
       "https://s1.dmcdn.net/v/WsQc01d5_t7P7yly0/x1080",
   },
   {
-    "name": " Cocktail"," profile_path":
+    "name": "stree2", "profile_path":
+      "https://s1.dmcdn.net/v/WsQc01d5_t7P7yly0/x1080",
+  },
+  {
+    "name": " Cocktail", "profile_path":
       "https://images004-a.media.erosnow.com/movie/1/1004611/img145210/6893375/1004611_6893375.jpg",
   },
   {
-    "name": "Tanvi The Great"," profile_path":
+    "name": "Tanvi The Great", "profile_path":
       "https://filmfare.wwmindia.com/content/2025/jul/bollywood-movies-to-watch-in-july-2025-tanvi-the-great.jpg",
   },
   {
-    "name": "metro"," profile_path":
+    "name": "metro", "profile_path":
       "https://img.etimg.com/thumb/msid-122092321,width-480,height-360,imgsize-47266,resizemode-75/metro-in-dino.jpg",
   },
   
