@@ -84,9 +84,9 @@ const dummyCastsData = [
 
 export const dummyShowData = [
   {
-     "_id": "1",
-     "id": 1,
-     "title":"In the list Lands",
+     "_id": "10001",
+     "id": 10001,
+     "title":"In the lists Lands",
      "overview":"hello movie",
      "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
     "backdrop_path":"https://m.media-amazon.com/images/M/MV5BYTg4NGNmNzctZGE5NC00ODgyLWEwNTUtMThiOTdkZDUyZWM0XkEyXkFqcGc@._V1_.jpg",
@@ -96,7 +96,7 @@ export const dummyShowData = [
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-12",
+    "release_date": "2025-4-22",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":6.516,
@@ -106,8 +106,8 @@ export const dummyShowData = [
 
   },
   {
-    "_id": "2",
-     "id": 2,
+    "_id": "1002",
+     "id": 1002,
      "title":"In the list Lands",
      "overview":"hello movie",
      "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
@@ -118,15 +118,15 @@ export const dummyShowData = [
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-12",
+    "release_date": "2025-5-10",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
     "runtime":117
   },
   {
-     "_id": "3",
-     "id": 3,
+     "_id": "1003",
+     "id": 1003,
      "title":"In the list Lands",
      "overview":"hello movie",
      "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
@@ -137,15 +137,15 @@ export const dummyShowData = [
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-12",
+    "release_date": "2025-3-23",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":8.516,
     "runtime":120
   },
   {
-    "_id": "4",
-     "id": 4,
+    "_id": "1004",
+     "id": 1004,
      "title":"In the list Lands",
      "overview":"hello movie",
      "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
@@ -156,15 +156,15 @@ export const dummyShowData = [
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-12",
+    "release_date": "2025-7-22",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
     "runtime":117
   },
   {
-    "_id": "5",
-     "id": 5,
+    "_id": "1005",
+     "id": 1005,
      "title":"In the list Lands",
      "overview":"hello movie",
      "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
@@ -175,15 +175,15 @@ export const dummyShowData = [
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-12",
+    "release_date": "2025-2-2",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
     "runtime":117
   },
   {
-    "_id": "6",
-     "id": 6,
+    "_id": "1006",
+     "id": 1006,
      "title":"In the list Lands",
      "overview":"hello movie",
      "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
@@ -194,15 +194,15 @@ export const dummyShowData = [
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-12",
+    "release_date": "2024-4-18",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
     "runtime":117
   },
   {
-    "_id": "7",
-     "id": 7,
+    "_id": "1007",
+     "id": 1007,
      "title":"In the list Lands",
      "overview":"hello movie",
      "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
@@ -213,15 +213,15 @@ export const dummyShowData = [
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-12",
+    "release_date": "2025-1-15",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
     "runtime":117
   },
   {
-    "_id": "8",
-     "id": 8,
+    "_id": "1008",
+     "id": 1008,
      "title":"In the list Lands",
      "overview":"hello movie",
      "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
@@ -232,7 +232,7 @@ export const dummyShowData = [
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-12",
+    "release_date": "2025-7-7",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
@@ -242,38 +242,38 @@ export const dummyShowData = [
 ]
 
 export const dummyDateTimeData={
-  "2025-5-12":[
+  "2025-5-22":[
     {
     "showId": 101,
-      "time":"2025-5-12T01:00:00.000Z",
+      "time":"2025-05-22T01:00:00.000Z",
     
     },
     {
     "showId": 102,
-      "time": "2025-5-12T03:00:00.000Z",
+      "time": "2025-05-22T03:00:00.000Z",
      
     },
     {
     "showId": 103,
-      "time": "2025-5-12T07:00:00.000Z",
+      "time": "2025-05-22T07:00:00.000Z",
       
     },
 
   ],
-  "2025-5-22":[
+  "2025-4-22":[
     {
     "showId": 104,
-      "time":"2025-5-22T01:00:00.000Z",
+      "time":"2025-04-22T01:00:00.000Z",
      
     },
     {
     "showId": 105,
-      "time": "2025-5-22T03:00:00.000Z",
+      "time": "2025-04-22T03:00:00.000Z",
       
     },
     {
     "showId": 106,
-      "time": "2025-5-22T07:00:00.000Z",
+      "time": "2025-04-22T07:00:00.000Z",
       
     },
 
@@ -281,17 +281,17 @@ export const dummyDateTimeData={
   "2025-6-01":[
     {
     "showId": 107,
-      "time":"2025-6-01T01:00:00.000Z",
+      "time":"2025-06-01T01:00:00.000Z",
     
     },
     {
     "showId": 108,
-      "time": "2025-6-01T03:00:00.000Z",
+      "time": "2025-06-01T03:00:00.000Z",
       
     },
     {
     "showId": 109,
-      "time": "2025-6-01T07:00:00.000Z",
+      "time": "2025-06-01T07:00:00.000Z",
      
     },
 
@@ -299,17 +299,35 @@ export const dummyDateTimeData={
   "2025-6-19":[
     {
     "showId": 110,
-      "time":"2025-6-19T01:00:00.000Z",
+      "time":"2025-06-19T01:00:00.000Z",
      
     },
     {
     "showId": 111,
-      "time": "2025-6-19T03:00:00.000Z",
+      "time": "2025-06-19T03:00:00.000Z",
    
     },
     {
     "showId": 112,
-      "time": "2025-6-19T07:00:00.000Z",
+      "time": "2025-06-19T07:00:00.000Z",
+    
+    },
+
+  ],
+  "2025-4-19":[
+    {
+    "showId": 113,
+      "time":"2025-04-19T01:00:00.000Z",
+     
+    },
+    {
+    "showId": 114,
+      "time": "2025-04-19T03:00:00.000Z",
+   
+    },
+    {
+    "showId": 115,
+      "time": "2025-04-19T07:00:00.000Z",
     
     },
 
@@ -321,9 +339,9 @@ export const dummyDashboardDate = {
   totalUser: 5,
   activeShows: [
     {
-      _id: "104",
+      _id: "101",
       movie: dummyShowData[0],
-      showDateTime: "2025-5-22T01:00:00.000Z",
+      showDateTime:"2025-5-22T01:00:00.000Z",
       showPrice: 60,
       occupiedSeats: {
         A1: "A001",
@@ -347,51 +365,69 @@ export const dummyDashboardDate = {
 
 export const dummyBookingData = [
   {
-    "_Id": "B001",        
-   " user": {"name": "muskan",},
-   
-    "show":{
-      showId: 102,
-      movie : dummyShowData[0],
-      showDateTimetime: "2025-5-12T03:00:00.000Z",
-      showPrice:59
-
+    _id: "B001",
+    user: { name: "Muskan" },
+    show: {
+      showId: 1004,
+      movie: dummyShowData[0],
+      showDateTime: "2025-07-22T03:00:00.000Z",
+      showPrice: 59,
     },
-    "amount":98,
-    "bookedSeats":["D1","D2"],
-    "isPaid": false,
-    
+    amount: 118, // 2 seats * 59
+    bookedSeats: ["D1", "D2"],
+    isPaid: false,
   },
   {
-    "_Id": "B002",        
-  " user": {"name": "muskan",},
-  
-    "show":{
+    _id: "B002",
+    user: { name: "Rahul" },
+    show: {
       showId: 101,
-      movie : dummyShowData[0],
-      showDateTimetime: "2025-5-12T01:00:00.000Z",
-      showPrice:99
-
+      movie: dummyShowData[1],
+      showDateTime: "2025-05-12T01:00:00.000Z",
+      showPrice: 99,
     },
-    "amount":198,
-    "bookedSeats":["A1"],
-    "isPaid": true,
-    
+    amount: 99, // 1 seat * 99
+    bookedSeats: ["A1"],
+    isPaid: true,
   },
   {
-    "_Id": "B003",        
- "user": {"name": "muskan",},
-   
-    "show":{
+    _id: "B003",
+    user: { name: "Aditi" },
+    show: {
       showId: 103,
-      movie : dummyShowData[0],
-      showDateTimetime: "2025-5-12T03:00:00.000Z",
-      showPrice:49
-
+      movie: dummyShowData[2],
+      showDateTime: "2025-05-12T03:00:00.000Z",
+      showPrice: 49,
     },
-    "amount":88,
-    "bookedSeats":["A1","A2","A3"],
-    "isPaid": false,
-    
+    amount: 147, // 3 seats * 49
+    bookedSeats: ["A1", "A2", "A3"],
+    isPaid: false,
   },
-]
+  {
+    _id: "B004",
+    user: { name: "Karan" },
+    show: {
+      showId: 106,
+      movie: dummyShowData[3],
+      showDateTime: "2025-04-22T07:00:00.000Z",
+      showPrice: 120,
+    },
+    amount: 240, // 2 seats * 120
+    bookedSeats: ["B1", "B2"],
+    isPaid: true,
+  },
+  {
+    _id: "B005",
+    user: { name: "Sneha" },
+    show: {
+      showId: 108,
+      movie: dummyShowData[4],
+      showDateTime: "2025-06-01T03:00:00.000Z",
+      showPrice: 80,
+    },
+    amount: 240, // 3 seats * 80
+    bookedSeats: ["C1", "C2", "C3"],
+    isPaid: true,
+  },
+];
+
