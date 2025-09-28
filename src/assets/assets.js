@@ -245,22 +245,106 @@ export const dummyDateTimeData={
   "2025-5-12":[
     {
     "showId": 101,
-      "time": "2025-5-12T01:00:00.000Z",
-      "seatsAvailable": 50
+      "time":"2025-5-12T01:00:00.000Z",
+    
     },
     {
     "showId": 102,
       "time": "2025-5-12T03:00:00.000Z",
-      "seatsAvailable": 50
+     
     },
     {
     "showId": 103,
       "time": "2025-5-12T07:00:00.000Z",
-      "seatsAvailable": 50
+      
+    },
+
+  ],
+  "2025-5-22":[
+    {
+    "showId": 104,
+      "time":"2025-5-22T01:00:00.000Z",
+     
+    },
+    {
+    "showId": 105,
+      "time": "2025-5-22T03:00:00.000Z",
+      
+    },
+    {
+    "showId": 106,
+      "time": "2025-5-22T07:00:00.000Z",
+      
+    },
+
+  ],
+  "2025-6-01":[
+    {
+    "showId": 107,
+      "time":"2025-6-01T01:00:00.000Z",
+    
+    },
+    {
+    "showId": 108,
+      "time": "2025-6-01T03:00:00.000Z",
+      
+    },
+    {
+    "showId": 109,
+      "time": "2025-6-01T07:00:00.000Z",
+     
+    },
+
+  ],
+  "2025-6-19":[
+    {
+    "showId": 110,
+      "time":"2025-6-19T01:00:00.000Z",
+     
+    },
+    {
+    "showId": 111,
+      "time": "2025-6-19T03:00:00.000Z",
+   
+    },
+    {
+    "showId": 112,
+      "time": "2025-6-19T07:00:00.000Z",
+    
     },
 
   ]
 }
+export const dummyDashboardDate = {
+  totalBooking: 14,
+  totalRevenue: 1517,
+  totalUser: 5,
+  activeShows: [
+    {
+      _id: "104",
+      movie: dummyShowData[0],
+      showDateTime: "2025-5-22T01:00:00.000Z",
+      showPrice: 60,
+      occupiedSeats: {
+        A1: "A001",
+        A2: "A001",
+        A3: "A001",
+      },
+    },
+    {
+      _id: "102",
+      movie: dummyShowData[1],
+      showDateTime: "2025-5-22T01:00:00.000Z",
+      showPrice: 100,
+      occupiedSeats: {
+        D1: "A001",
+        D2: "A001",
+        D3: "A001",
+      },
+    },
+  ],
+};
+
 export const dummyBookingData = [
   {
     "_Id": "B001",        
