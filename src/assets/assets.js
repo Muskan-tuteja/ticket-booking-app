@@ -1,7 +1,9 @@
 import logo from "./logo.png";
+import profile from './profile.png'
 
 export const assets = {
   logo,
+  profile,
 
 }
 
@@ -33,63 +35,63 @@ export const dummyTrailers = [
 const dummyCastsData = [
   {
     "name": "Robert Downey Jr.", "profile_path":
-      "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
+      "https://images.squarespace-cdn.com/content/v1/662d6dbc571bdb21fdbc79b5/74f0978e-7e70-4fe4-a8dc-c05112b758ca/16735402991293.jpg",
   },
   {
-    "name": "Azaad.", "profile_path":
-     "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
+    "name": "Ajay Devgn", "profile_path":
+     "https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg",
   },
   {
-    "name": "Rakkayie", "profile_path":
-     "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
+    "name": "Dilip Kumar", "profile_path":
+     "https://cdn.britannica.com/46/199946-050-0D1F2F1A/Dilip-Kumar-2008.jpg",
   },
   {
-    "name": "Ghaati", "profile_path":
-      "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
+    "name": "Ayushmann Khurrana", "profile_path":
+      "https://assets.gqindia.com/photos/66193c524cae6d217224ece4/1:1/w_1080,h_1080,c_limit/GQ-Hype-Ayushmann-Khurrana.jpg",
   },
   {
-    "name": "Obela", "profile_path":
-      "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
+    "name": "Jimmy Shergill", "profile_path":
+      "https://static.toiimg.com/thumb/msid-106936882,width-1280,height-720,resizemode-4/106936882.jpg",
   },
   {
-    "name": "Son of Sardaar", "profile_path":
-    "https://akns-images.eonline.com/eol_images/Entire_Site/2012716/1024.ironman.jlc.081612.jpeg?fit=around%7C1024:759&output-quality=90&crop=1024:759;center,top",
+    "name": "Tiger Shroff", "profile_path":
+    "https://m.media-amazon.com/images/M/MV5BNjUyMTQyNDA2M15BMl5BanBnXkFtZTgwNDI4ODEzOTE@._V1_.jpg",
   },
   {
-    "name": "Avatar", "profile_path":
-      "https://www.tallengestore.com/cdn/shop/products/Avatar_9ea2c3a8-930b-4c06-866f-7e417ddde0d7.jpg?v=1634645786",
+    "name": "Suniel Shetty", "profile_path":
+      "https://in.bmscdn.com/iedb/artist/images/website/poster/large/suniel-shetty-2291-09-09-2019-01-21-33.jpg",
   },
   {
-    "name": "Jumanji", "profile_path":
-      "https://s1.dmcdn.net/v/WsQc01d5_t7P7yly0/x1080",
+    "name": "Rajkummar Rao", "profile_path":
+      "https://assets.gqindia.com/photos/66c5896bbf8b2a8d872f4fc6/16:9/w_1920,h_1080,c_limit/Stree%202%20actor%20Rajkummar%20Rao.jpg",
   },
   {
-    "name": "stree2", "profile_path":
-      "https://s1.dmcdn.net/v/WsQc01d5_t7P7yly0/x1080",
+    "name": "varun dhawan", "profile_path":
+      "https://upload.wikimedia.org/wikipedia/commons/7/74/Varun_Dhawan_promoting_Badrinath_Ki_Dulhania.jpg",
   },
   {
-    "name": " Cocktail", "profile_path":
-      "https://images004-a.media.erosnow.com/movie/1/1004611/img145210/6893375/1004611_6893375.jpg",
+    "name": " akshay kumar", "profile_path":
+      "https://m.media-amazon.com/images/M/MV5BODI4NDY1NzkyM15BMl5BanBnXkFtZTgwNzM3MDM0OTE@._V1_FMjpg_UX1000_.jpg",
   },
   {
-    "name": "Tanvi The Great", "profile_path":
-      "https://filmfare.wwmindia.com/content/2025/jul/bollywood-movies-to-watch-in-july-2025-tanvi-the-great.jpg",
+    "name": "sanjay dutt", "profile_path":
+      "https://m.media-amazon.com/images/M/MV5BNzU2NTgwNzY1OF5BMl5BanBnXkFtZTcwMjQxNzcxOA@@._V1_.jpg",
   },
   {
-    "name": "metro", "profile_path":
-      "https://img.etimg.com/thumb/msid-122092321,width-480,height-360,imgsize-47266,resizemode-75/metro-in-dino.jpg",
+    "name": "Aamir khan", "profile_path":
+      "https://upload.wikimedia.org/wikipedia/commons/6/65/Aamir_Khan_at_the_success_bash_of_Secret_Superstar.jpg",
   },
   
 ];
 
 export const dummyShowData = [
   {
-     "_id": "10001",
-     "id": 10001,
+     "_id": "1001",
+     "id": 1001,
      "title":"In the lists Lands",
      "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
-    "backdrop_path":"https://m.media-amazon.com/images/M/MV5BYTg4NGNmNzctZGE5NC00ODgyLWEwNTUtMThiOTdkZDUyZWM0XkEyXkFqcGc@._V1_.jpg",
+     "poster_path": "https://i.ytimg.com/vi/grVVw5oWh9E/sddefault.jpg",
+    "backdrop_path":"https://img.theweek.in/content/dam/week/week/review/movies/images/2025/2/21/biwi.jpg",
     "genres":[
       {"id":28 , "name":"action"},
       {"id":14 , "name":"Fantasy"},
@@ -110,15 +112,15 @@ export const dummyShowData = [
      "id": 1002,
      "title":"In the list Lands",
      "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
-    "backdrop_path":"https://m.media-amazon.com/images/M/MV5BYTg4NGNmNzctZGE5NC00ODgyLWEwNTUtMThiOTdkZDUyZWM0XkEyXkFqcGc@._V1_.jpg",
+     "poster_path": "https://m.media-amazon.com/images/M/MV5BYzdhNWQzMzItMzI0NC00N2M3LTg0MzctMjBmYzMzMDFiMGFjXkEyXkFqcGc@._V1_.jpg",
+    "backdrop_path":"https://glamsham.com/wp-content/uploads/2025/01/Azaad-Review_pic-courtesy-Instagram.jpg",
     "genres":[
       {"id":28 , "name":"action"},
       {"id":14 , "name":"Fantasy"},
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-10",
+    "release_date": "2025-5-22",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
@@ -129,15 +131,15 @@ export const dummyShowData = [
      "id": 1003,
      "title":"In the list Lands",
      "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
-    "backdrop_path":"https://m.media-amazon.com/images/M/MV5BYTg4NGNmNzctZGE5NC00ODgyLWEwNTUtMThiOTdkZDUyZWM0XkEyXkFqcGc@._V1_.jpg",
+     "poster_path": "https://upload.wikimedia.org/wikipedia/en/a/ab/Jewel_Thief_%E2%80%93_The_Heist_Begins_poster.jpg",
+    "backdrop_path":"https://i.ytimg.com/vi/_dUNLPNfS8s/maxresdefault.jpg",
     "genres":[
       {"id":28 , "name":"action"},
       {"id":14 , "name":"Fantasy"},
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-3-23",
+    "release_date": "2025-6-01",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":8.516,
@@ -148,15 +150,15 @@ export const dummyShowData = [
      "id": 1004,
      "title":"In the list Lands",
      "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
-    "backdrop_path":"https://m.media-amazon.com/images/M/MV5BYTg4NGNmNzctZGE5NC00ODgyLWEwNTUtMThiOTdkZDUyZWM0XkEyXkFqcGc@._V1_.jpg",
+     "poster_path": "https://bollyspice.com/wp-content/uploads/2025/01/IMG_4306.jpeg",
+    "backdrop_path":"https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Sky_Force_poster.jpg/250px-Sky_Force_poster.jpg",
     "genres":[
       {"id":28 , "name":"action"},
       {"id":14 , "name":"Fantasy"},
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-7-22",
+    "release_date": "2025-6-19",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
@@ -167,15 +169,15 @@ export const dummyShowData = [
      "id": 1005,
      "title":"In the list Lands",
      "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
-    "backdrop_path":"https://m.media-amazon.com/images/M/MV5BYTg4NGNmNzctZGE5NC00ODgyLWEwNTUtMThiOTdkZDUyZWM0XkEyXkFqcGc@._V1_.jpg",
+     "poster_path": "https://www.deccanchronicle.com/h-upload/2025/05/24/1921145-342-bhool-chuk-maaf.webp",
+    "backdrop_path":"https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Bhool_Chuk_Maaf_film_poster.jpg/250px-Bhool_Chuk_Maaf_film_poster.jpg",
     "genres":[
       {"id":28 , "name":"action"},
       {"id":14 , "name":"Fantasy"},
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-2-2",
+    "release_date": "2025-4-19",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
@@ -186,15 +188,15 @@ export const dummyShowData = [
      "id": 1006,
      "title":"In the list Lands",
      "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
-    "backdrop_path":"https://m.media-amazon.com/images/M/MV5BYTg4NGNmNzctZGE5NC00ODgyLWEwNTUtMThiOTdkZDUyZWM0XkEyXkFqcGc@._V1_.jpg",
+     "poster_path": "https://m.media-amazon.com/images/M/MV5BNWZhOGU0MTktNWNkMS00MWNmLWFiYTktOWRkNTJhYzlkNzQyXkEyXkFqcGc@._V1_.jpg",
+    "backdrop_path":"https://m.media-amazon.com/images/M/MV5BNzBmOWI1MWUtODI4MS00ZmEzLTkxYmMtOGQ0YzMwZTI3YTJhXkEyXkFqcGc@._V1_.jpg",
     "genres":[
       {"id":28 , "name":"action"},
       {"id":14 , "name":"Fantasy"},
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2024-4-18",
+    "release_date": "2025-8-10",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
@@ -206,14 +208,14 @@ export const dummyShowData = [
      "title":"In the list Lands",
      "overview":"hello movie",
      "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
-    "backdrop_path":"https://m.media-amazon.com/images/M/MV5BYTg4NGNmNzctZGE5NC00ODgyLWEwNTUtMThiOTdkZDUyZWM0XkEyXkFqcGc@._V1_.jpg",
+    "backdrop_path":"https://upload.wikimedia.org/wikipedia/en/3/38/The_Bhootnii_poster.jpg",
     "genres":[
       {"id":28 , "name":"action"},
       {"id":14 , "name":"Fantasy"},
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-1-15",
+    "release_date": "2025-8-15",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
@@ -224,15 +226,15 @@ export const dummyShowData = [
      "id": 1008,
      "title":"In the list Lands",
      "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
-    "backdrop_path":"https://m.media-amazon.com/images/M/MV5BYTg4NGNmNzctZGE5NC00ODgyLWEwNTUtMThiOTdkZDUyZWM0XkEyXkFqcGc@._V1_.jpg",
+     "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/The_Bhootnii_poster.jpg/250px-The_Bhootnii_poster.jpg",
+    "backdrop_path":"https://static.theprint.in/wp-content/uploads/2025/04/ANI-20250403074427_CvcA05m.jpg?compress=true&quality=80&w=376&dpr=2.6",
     "genres":[
       {"id":28 , "name":"action"},
       {"id":14 , "name":"Fantasy"},
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-7-7",
+    "release_date": "2025-9-17",
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
@@ -331,6 +333,60 @@ export const dummyDateTimeData={
     
     },
 
+  ],
+  "2025-08-10":[
+    {
+    "showId": 116,
+      "time":"2025-08-10T01:00:00.000Z",
+     
+    },
+    {
+    "showId": 117,
+      "time": "2025-08-10T03:00:00.000Z",
+   
+    },
+    {
+    "showId": 118,
+      "time": "2025-08-10T07:00:00.000Z",
+    
+    },
+
+  ],
+  "2025-08-15":[
+    {
+    "showId": 119,
+      "time":"2025-08-15T01:00:00.000Z",
+     
+    },
+    {
+    "showId": 120,
+      "time": "2025-08-15T03:00:00.000Z",
+   
+    },
+    {
+    "showId": 121,
+      "time": "2025-08-15T07:00:00.000Z",
+    
+    },
+
+  ],
+  "2025-09-17":[
+    {
+    "showId": 122,
+      "time":"2025-09-17T01:00:00.000Z",
+    
+    },
+    {
+    "showId": 123,
+      "time": "2025-09-17T03:00:00.000Z",
+   
+    },
+    {
+    "showId": 124,
+      "time": "2025-09-17T07:00:00.000Z",
+    
+    },
+
   ]
 }
 export const dummyDashboardDate = {
@@ -339,7 +395,7 @@ export const dummyDashboardDate = {
   totalUser: 5,
   activeShows: [
     {
-      _id: "101",
+      _id: "1001",
       movie: dummyShowData[0],
       showDateTime:"2025-5-22T01:00:00.000Z",
       showPrice: 60,
@@ -350,7 +406,7 @@ export const dummyDashboardDate = {
       },
     },
     {
-      _id: "102",
+      _id: "1002",
       movie: dummyShowData[1],
       showDateTime: "2025-5-22T01:00:00.000Z",
       showPrice: 100,
@@ -370,10 +426,10 @@ export const dummyBookingData = [
     show: {
       showId: 1004,
       movie: dummyShowData[0],
-      showDateTime: "2025-07-22T03:00:00.000Z",
+      showDateTime: "2025-06-19T03:00:00.000Z",
       showPrice: 59,
     },
-    amount: 118, // 2 seats * 59
+    amount: 118,
     bookedSeats: ["D1", "D2"],
     isPaid: false,
   },
@@ -381,9 +437,9 @@ export const dummyBookingData = [
     _id: "B002",
     user: { name: "Rahul" },
     show: {
-      showId: 101,
+      showId: 1001,
       movie: dummyShowData[1],
-      showDateTime: "2025-05-12T01:00:00.000Z",
+      showDateTime: "2025-04-22T01:00:00.000Z",
       showPrice: 99,
     },
     amount: 99, // 1 seat * 99
@@ -394,9 +450,9 @@ export const dummyBookingData = [
     _id: "B003",
     user: { name: "Aditi" },
     show: {
-      showId: 103,
+      showId: 1003,
       movie: dummyShowData[2],
-      showDateTime: "2025-05-12T03:00:00.000Z",
+      showDateTime: "2025-06-01T03:00:00.000Z",
       showPrice: 49,
     },
     amount: 147, // 3 seats * 49
@@ -407,9 +463,9 @@ export const dummyBookingData = [
     _id: "B004",
     user: { name: "Karan" },
     show: {
-      showId: 106,
+      showId: 1006,
       movie: dummyShowData[3],
-      showDateTime: "2025-04-22T07:00:00.000Z",
+      showDateTime: "2025-08-10T07:00:00.000Z",
       showPrice: 120,
     },
     amount: 240, // 2 seats * 120
@@ -420,14 +476,14 @@ export const dummyBookingData = [
     _id: "B005",
     user: { name: "Sneha" },
     show: {
-      showId: 108,
+      showId: 1008,
       movie: dummyShowData[4],
-      showDateTime: "2025-06-01T03:00:00.000Z",
+      showDateTime: "2025-09-17T03:00:00.000Z",
       showPrice: 80,
     },
-    amount: 240, // 3 seats * 80
+    amount: 140,
     bookedSeats: ["C1", "C2", "C3"],
-    isPaid: true,
+    isPaid: false,
   },
 ];
 
