@@ -102,6 +102,7 @@ export const dummyShowData = [
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":6.516,
+     "vote_count": 98234, 
     "runtime":114
 
 
@@ -124,6 +125,7 @@ export const dummyShowData = [
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
+     "vote_count": 123435, 
     "runtime":117
   },
   {
@@ -143,6 +145,7 @@ export const dummyShowData = [
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":8.516,
+     "vote_count": 12342 ,
     "runtime":120
   },
   {
@@ -162,6 +165,7 @@ export const dummyShowData = [
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
+     "vote_count": 9234 ,
     "runtime":117
   },
   {
@@ -181,6 +185,7 @@ export const dummyShowData = [
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
+     "vote_count": 4234 ,
     "runtime":117
   },
   {
@@ -200,6 +205,7 @@ export const dummyShowData = [
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
+     "vote_count": 1934 ,
     "runtime":117
   },
   {
@@ -219,6 +225,7 @@ export const dummyShowData = [
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
+     "vote_count": 2234 ,
     "runtime":117
   },
   {
@@ -238,7 +245,8 @@ export const dummyShowData = [
     "original_language": "en",
     "tagline" : "Be There and be square",
     "vote_average":7.516,
-    "runtime":117
+    "runtime":117,
+    "vote_count": 1234 
   }
  
 ]
