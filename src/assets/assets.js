@@ -390,30 +390,52 @@ export const dummyDateTimeData={
   ]
 }
 export const dummyDashboardDate = {
-  totalBooking: 14,
+  totalBookings: 14,
   totalRevenue: 1517,
-  totalUser: 5,
+  totalUsers: 5,
   activeShows: [
     {
       _id: "1001",
       movie: dummyShowData[0],
-      showDateTime:"2025-5-22T01:00:00.000Z",
+      showDateTime:"2025-05-22T01:00:00.000Z",
       showPrice: 60,
       occupiedSeats: {
-        A1: "A001",
-        A2: "A001",
-        A3: "A001",
+        A1: "user_1",
+            B1: "user_2",
+            C3: "user_3",
       },
     },
     {
       _id: "1002",
       movie: dummyShowData[1],
-      showDateTime: "2025-5-22T01:00:00.000Z",
+      showDateTime:"2025-05-22T07:00:00.000Z",
       showPrice: 100,
       occupiedSeats: {
         D1: "A001",
         D2: "A001",
         D3: "A001",
+      },
+    },
+    {
+      _id: "1003",
+      movie: dummyShowData[2],
+      showDateTime:"2025-06-01T01:00:00.000Z",
+      showPrice: 90,
+      occupiedSeats: {
+        c1: "A001",
+        c2: "A001",
+        h3: "A001",
+      },
+    },
+    {
+      _id: "1004",
+      movie: dummyShowData[3],
+      showDateTime:"2025-06-19T03:00:00.000Z",
+      showPrice: 90,
+      occupiedSeats: {
+        c1: "A001",
+        c2: "A001",
+        h3: "A001",
       },
     },
   ],
