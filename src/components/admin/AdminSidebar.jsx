@@ -40,10 +40,10 @@ const AdminSidebar = () => {
         {adminNavlinks.map((link, index) => (
           <NavLink
             key={index}
-            to={link.path} end
+            to={link.path}
             className={({ isActive }) =>
               ` relative flex items-center max-md:justify-center gap-2 w-full py-2.5 min-md:pl-10 first:mt-6 text-gray-400 ${
-                isActive && "bg-primary/15 text-primary group:"
+                isActive && "bg-primary/15 text-primary group"
               }`
             }
           >
@@ -52,7 +52,7 @@ const AdminSidebar = () => {
     <link.icon className="w-5 h-5" />
     <p className="max-md:hidden">{link.name}</p>
     <span
-      className={`w-1.5 h-10 rotate-1 right-0 absolute ${
+      className={`w-1.5 h-10 rounded-1 right-0 absolute ${
         isActive && "bg-primary"
       }`}
     ></span>
