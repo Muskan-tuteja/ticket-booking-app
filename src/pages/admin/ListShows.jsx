@@ -10,25 +10,17 @@ const ListShows = () => {
   const [Shows, setShows] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const getAllShows = async () => {
-    try {
-      setShows([
-        {
-          movie: dummyShowData[0],
-          showDateTime: "2025-05-22T01:00:00.000Z",
-          showPrice: 60,
-          occupiedSeats: {
-            A1: "user_1",
-            B1: "user_2",
-            C3: "user_3",
-          },
-        },
-      ]);
-      setLoading(false);
-    } catch (error) {
-      console.log(error);
-    }
-  };
+ const getAllShows = async () => {
+  try {
+    const res = await fetch("http://localhost:3000/shows"); // API endpoint
+    const data = await res.json();
+    setShows(data);  // set API response
+    setLoading(false);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
   useEffect(() => {
     getAllShows();
   }, []);

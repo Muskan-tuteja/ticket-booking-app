@@ -86,317 +86,319 @@ const dummyCastsData = [
 
 export const dummyShowData = [
   {
-     "_id": "1001",
-     "id": 1001,
-     "title":"In the lists Lands",
-     "overview":"hello movie",
-     "poster_path": "https://i.ytimg.com/vi/grVVw5oWh9E/sddefault.jpg",
-    "backdrop_path":"https://img.theweek.in/content/dam/week/week/review/movies/images/2025/2/21/biwi.jpg",
+    "_id": "1001",
+    "id": 1001,
+    "title":"Mere Husband Ki Biwi",
+    "overview":"An epic fantasy adventure of lost kingdoms.",
+    "poster_path": "https://liveindia.tv/wp-content/uploads/2025/02/Box-office.jpg",
+    "backdrop_path":"https://i.ytimg.com/vi/kPDPBU8eVuo/maxresdefault.jpg",
     "genres":[
-      {"id":28 , "name":"action"},
-      {"id":14 , "name":"Fantasy"},
-      {"id":12 , "name":"Adventure"}
+      {"id":28 , "name":"Action"},
+      {"id":12 , "name":"Adventure"},
+      {"id":14 , "name":"Fantasy"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-4-22",
+    "release_date": "2025-04-22",
     "original_language": "en",
     "tagline" : "Be There and be square",
-    "vote_average":6.516,
-     "vote_count": 98234, 
+    "vote_average":6.5,
+    "vote_count": 98234, 
     "runtime":114
-
-
-
   },
   {
     "_id": "1002",
-     "id": 1002,
-     "title":"In the list Lands",
-     "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/M/MV5BYzdhNWQzMzItMzI0NC00N2M3LTg0MzctMjBmYzMzMDFiMGFjXkEyXkFqcGc@._V1_.jpg",
+    "id": 1002,
+    "title":"Azzad",
+    "overview":"Thrilling action in the heart of the desert.",
+    "poster_path": "https://m.media-amazon.com/images/M/MV5BYzdhNWQzMzItMzI0NC00N2M3LTg0MzctMjBmYzMzMDFiMGFjXkEyXkFqcGc@._V1_.jpg",
     "backdrop_path":"https://glamsham.com/wp-content/uploads/2025/01/Azaad-Review_pic-courtesy-Instagram.jpg",
     "genres":[
-      {"id":28 , "name":"action"},
-      {"id":14 , "name":"Fantasy"},
-      {"id":12 , "name":"Adventure"}
+      {"id":28 , "name":"Action"},
+      {"id":53 , "name":"Thriller"},
+      {"id":80 , "name":"Crime"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-5-22",
+    "release_date": "2025-05-22",
     "original_language": "en",
-    "tagline" : "Be There and be square",
-    "vote_average":7.516,
-     "vote_count": 123435, 
+    "tagline" : "Survive the storm",
+    "vote_average":7.5,
+    "vote_count": 123435, 
     "runtime":117
   },
   {
-     "_id": "1003",
-     "id": 1003,
-     "title":"In the list Lands",
-     "overview":"hello movie",
-     "poster_path": "https://upload.wikimedia.org/wikipedia/en/a/ab/Jewel_Thief_%E2%80%93_The_Heist_Begins_poster.jpg",
+    "_id": "1003",
+    "id": 1003,
+    "title":"Space Odyssey",
+    "overview":"Journey through the stars and beyond.",
+    "poster_path": "https://upload.wikimedia.org/wikipedia/en/a/ab/Jewel_Thief_%E2%80%93_The_Heist_Begins_poster.jpg",
     "backdrop_path":"https://i.ytimg.com/vi/_dUNLPNfS8s/maxresdefault.jpg",
     "genres":[
-      {"id":28 , "name":"action"},
-      {"id":14 , "name":"Fantasy"},
-      {"id":12 , "name":"Adventure"}
+      {"id":878 , "name":"Sci-Fi"},
+      {"id":12 , "name":"Adventure"},
+      {"id":28 , "name":"Action"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-6-01",
+    "release_date": "2025-06-01",
     "original_language": "en",
-    "tagline" : "Be There and be square",
-    "vote_average":8.516,
-     "vote_count": 12342 ,
+    "tagline" : "Explore the unknown",
+    "vote_average":8.5,
+    "vote_count": 12342,
     "runtime":120
   },
   {
     "_id": "1004",
-     "id": 1004,
-     "title":"In the list Lands",
-     "overview":"hello movie",
-     "poster_path": "https://bollyspice.com/wp-content/uploads/2025/01/IMG_4306.jpeg",
+    "id": 1004,
+    "title":"Sky Force",
+    "overview":"A daring aerial battle across nations.",
+    "poster_path": "https://bollyspice.com/wp-content/uploads/2025/01/IMG_4306.jpeg",
     "backdrop_path":"https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/Sky_Force_poster.jpg/250px-Sky_Force_poster.jpg",
     "genres":[
-      {"id":28 , "name":"action"},
-      {"id":14 , "name":"Fantasy"},
+      {"id":28 , "name":"Action"},
+      {"id":10752 , "name":"War"},
       {"id":12 , "name":"Adventure"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-6-19",
+    "release_date": "2025-06-19",
     "original_language": "en",
-    "tagline" : "Be There and be square",
-    "vote_average":7.516,
-     "vote_count": 9234 ,
+    "tagline" : "Fight for the skies",
+    "vote_average":7.5,
+    "vote_count": 9234,
     "runtime":117
   },
   {
     "_id": "1005",
-     "id": 1005,
-     "title":"In the list Lands",
-     "overview":"hello movie",
-     "poster_path": "https://www.deccanchronicle.com/h-upload/2025/05/24/1921145-342-bhool-chuk-maaf.webp",
+    "id": 1005,
+    "title":"Bhool Chuk Maaf",
+    "overview":"A story of love, loss, and forgiveness.",
+    "poster_path": "https://www.deccanchronicle.com/h-upload/2025/05/24/1921145-342-bhool-chuk-maaf.webp",
     "backdrop_path":"https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Bhool_Chuk_Maaf_film_poster.jpg/250px-Bhool_Chuk_Maaf_film_poster.jpg",
     "genres":[
-      {"id":28 , "name":"action"},
-      {"id":14 , "name":"Fantasy"},
-      {"id":12 , "name":"Adventure"}
+      {"id":18 , "name":"Drama"},
+      {"id":10749 , "name":"Romance"},
+      {"id":35 , "name":"Comedy"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-4-19",
+    "release_date": "2025-04-19",
     "original_language": "en",
-    "tagline" : "Be There and be square",
-    "vote_average":7.516,
-     "vote_count": 4234 ,
+    "tagline" : "Forgive and forget",
+    "vote_average":7.5,
+    "vote_count": 4234,
     "runtime":117
   },
   {
     "_id": "1006",
-     "id": 1006,
-     "title":"In the list Lands",
-     "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/M/MV5BNWZhOGU0MTktNWNkMS00MWNmLWFiYTktOWRkNTJhYzlkNzQyXkEyXkFqcGc@._V1_.jpg",
+    "id": 1006,
+    "title":"Cyber Chase",
+    "overview":"A hacker's journey through the digital world.",
+    "poster_path": "https://m.media-amazon.com/images/M/MV5BNWZhOGU0MTktNWNkMS00MWNmLWFiYTktOWRkNTJhYzlkNzQyXkEyXkFqcGc@._V1_.jpg",
     "backdrop_path":"https://m.media-amazon.com/images/M/MV5BNzBmOWI1MWUtODI4MS00ZmEzLTkxYmMtOGQ0YzMwZTI3YTJhXkEyXkFqcGc@._V1_.jpg",
     "genres":[
-      {"id":28 , "name":"action"},
-      {"id":14 , "name":"Fantasy"},
-      {"id":12 , "name":"Adventure"}
+      {"id":28 , "name":"Action"},
+      {"id":878 , "name":"Sci-Fi"},
+      {"id":53 , "name":"Thriller"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-8-10",
+    "release_date": "2025-08-10",
     "original_language": "en",
-    "tagline" : "Be There and be square",
-    "vote_average":7.516,
-     "vote_count": 1934 ,
+    "tagline" : "Hack the world",
+    "vote_average":7.5,
+    "vote_count": 1934,
     "runtime":117
   },
   {
     "_id": "1007",
-     "id": 1007,
-     "title":"In the list Lands",
-     "overview":"hello movie",
-     "poster_path": "https://m.media-amazon.com/images/S/pv-target-images/c60f68ca378775d0512b366fde20309bf62397641820b4389659a7fa20ae85bf.jpg",
+    "id": 1007,
+    "title":"The Bhootnii",
+    "overview":"A supernatural journey into fear and mystery.",
+    "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/The_Bhootnii_poster.jpg/250px-The_Bhootnii_poster.jpg",
     "backdrop_path":"https://upload.wikimedia.org/wikipedia/en/3/38/The_Bhootnii_poster.jpg",
     "genres":[
-      {"id":28 , "name":"action"},
-      {"id":14 , "name":"Fantasy"},
-      {"id":12 , "name":"Adventure"}
+      {"id":27 , "name":"Horror"},
+      {"id":53 , "name":"Thriller"},
+      {"id":9648 , "name":"Mystery"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-8-15",
+    "release_date": "2025-08-15",
     "original_language": "en",
-    "tagline" : "Be There and be square",
-    "vote_average":7.516,
-     "vote_count": 2234 ,
+    "tagline" : "Face your fears",
+    "vote_average":7.5,
+    "vote_count": 2234,
     "runtime":117
   },
   {
     "_id": "1008",
-     "id": 1008,
-     "title":"In the list Lands",
-     "overview":"hello movie",
-     "poster_path": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/The_Bhootnii_poster.jpg/250px-The_Bhootnii_poster.jpg",
+    "id": 1008,
+    "title":"Chhori 2",
+    "overview":"Haunting secrets in a mysterious mansion.",
+    "poster_path": "https://m.media-amazon.com/images/M/MV5BNTFhOTE4MWItZTdmZS00NTI0LTliM2ItNTM4ZjM5MjE0MTYxXkEyXkFqcGc@._V1_.jpg",
     "backdrop_path":"https://static.theprint.in/wp-content/uploads/2025/04/ANI-20250403074427_CvcA05m.jpg?compress=true&quality=80&w=376&dpr=2.6",
     "genres":[
-      {"id":28 , "name":"action"},
-      {"id":14 , "name":"Fantasy"},
-      {"id":12 , "name":"Adventure"}
+      {"id":27 , "name":"Horror"},
+      {"id":53 , "name":"Thriller"},
+      {"id":9648 , "name":"Mystery"}
     ],
     "casts" : dummyCastsData,
-    "release_date": "2025-9-17",
+    "release_date": "2025-09-17",
     "original_language": "en",
-    "tagline" : "Be There and be square",
-    "vote_average":7.516,
-    "runtime":117,
-    "vote_count": 1234 
-  }
- 
+    "tagline" : "Unlock the unknown",
+    "vote_average":7.5,
+    "vote_count": 1234,
+    "runtime":127
+  },
+{
+  "_id": "1015",
+  "id": 1015,
+  "title":"Sapno Ki Duniya",
+  "overview":"A heartwarming story of friendship and dreams coming true in modern India.",
+  "poster_path": "https://via.placeholder.com/150",
+  "backdrop_path": "https://rukminim2.flixcart.com/image/480/640/kt1u3rk0/book/e/o/t/sapno-ki-duniya-original-imag6hpk7ggtvz68.jpeg?q=90",
+  "genres":[
+    {"id":35 , "name":"Comedy"},
+    {"id":18 , "name":"Drama"}
+  ],
+  "casts" : dummyCastsData,
+  "release_date": "2026-02-10",
+  "original_language": "hi",
+  "tagline" : "Where dreams meet reality",
+  "vote_average":0.0,
+  "vote_count": 0, 
+  "runtime":130
+},
+
+  {
+  "_id": "1010",
+  "id": 1010,
+  "title":"Autumn Mystery",
+  "overview":"A thrilling story unfolding in the cold November nights.",
+  "poster_path": "https://via.placeholder.com/150",
+  "backdrop_path": "https://m.media-amazon.com/images/M/MV5BODIzZmQzMTItZGY1YS00MmU4LWE5ZjgtNmFlMjQyMGZiY2FhXkEyXkFqcGc@._V1_.jpg",
+  "genres":[
+    {"id":53 , "name":"Thriller"},
+    {"id":9648 , "name":"Mystery"}
+  ],
+  "casts" : dummyCastsData,
+  "release_date": "2025-11-10",
+  "original_language": "en",
+  "tagline" : "Mystery in the air",
+  "vote_average":0.0,
+  "vote_count": 0, 
+  "runtime":125
+},
+
+{
+  "_id": "1011",
+  "id": 1011,
+  "title":"Winter Tales",
+  "overview":"Epic adventures set in December chill.",
+  "poster_path": "https://m.media-amazon.com/images/M/MV5BYzQyNGM3NTEtYWNkYy00ODVmLWI3ODgtMDU2ZTA2MDUzZjZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "backdrop_path": "https://m.media-amazon.com/images/M/MV5BYzQyNGM3NTEtYWNkYy00ODVmLWI3ODgtMDU2ZTA2MDUzZjZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+  "genres":[
+    {"id":14 , "name":"Fantasy"},
+    {"id":12 , "name":"Adventure"}
+  ],
+  "casts" : dummyCastsData,
+  "release_date": "2025-12-18",
+  "original_language": "en",
+  "tagline" : "Magic in the winter",
+  "vote_average":0.0,
+  "vote_count": 0, 
+  "runtime":130
+},
+{
+  "_id": "1014",
+  "id": 1014,
+  "title":"Nayi Udaan",
+  "overview":"A motivational drama about chasing dreams and overcoming obstacles.",
+  "poster_path": "https://via.placeholder.com/150",
+  "backdrop_path": "https://m.media-amazon.com/images/I/41qM2oczXjL._UF1000,1000_QL80_.jpg",
+  "genres":[
+    {"id":18 , "name":"Drama"},
+    {"id":10749 , "name":"Romance"}
+  ],
+  "casts" : dummyCastsData,
+  "release_date": "2026-01-15",
+  "original_language": "hi",
+  "tagline" : "Dreams take flight",
+  "vote_average":0.0,
+  "vote_count": 0, 
+  "runtime":138
+}
+,
+{
+  "_id": "1013",
+  "id": 1013,
+  "title":"Bharat Veer",
+  "overview":"An action-packed patriotic thriller featuring daring adventures across India.",
+  "poster_path": "https://via.placeholder.com/150",
+  "backdrop_path": "https://m.media-amazon.com/images/I/71DOtoHvh7L._UF1000,1000_QL80_.jpg",
+  "genres":[
+    {"id":28 , "name":"Action"},
+    {"id":10752 , "name":"War"}
+  ],
+  "casts" : dummyCastsData,
+  "release_date": "2025-12-05",
+  "original_language": "hi",
+  "tagline" : "Courage runs in our veins",
+  "vote_average":0.0,
+  "vote_count": 0, 
+  "runtime":135
+}
+
 ]
+// Example for a show
+const seats = [
+  { id: "A1", type: "VIP", bookedBy: null },
+  { id: "A2", type: "VIP", bookedBy: null },
+  { id: "B1", type: "Regular", bookedBy: null },
+  { id: "B2", type: "Regular", bookedBy: null },
+  // ... baaki seats
+];
 
-export const dummyDateTimeData={
-  "2025-5-22":[
-    {
-    "showId": 101,
-      "time":"2025-05-22T01:00:00.000Z",
-    
-    },
-    {
-    "showId": 102,
-      "time": "2025-05-22T03:00:00.000Z",
-     
-    },
-    {
-    "showId": 103,
-      "time": "2025-05-22T07:00:00.000Z",
-      
-    },
 
+
+export const dummyDateTimeData = {
+  "2025-05-22": [
+    { showId: 101, time:"2025-05-22T01:00:00.000Z" },
+    { showId: 102, time:"2025-05-22T03:00:00.000Z" },
+    { showId: 103, time:"2025-05-22T07:00:00.000Z" },
   ],
-  "2025-4-22":[
-    {
-    "showId": 104,
-      "time":"2025-04-22T01:00:00.000Z",
-     
-    },
-    {
-    "showId": 105,
-      "time": "2025-04-22T03:00:00.000Z",
-      
-    },
-    {
-    "showId": 106,
-      "time": "2025-04-22T07:00:00.000Z",
-      
-    },
-
+  "2025-04-22": [
+    { showId: 104, time:"2025-04-22T01:00:00.000Z" },
+    { showId: 105, time:"2025-04-22T03:00:00.000Z" },
+    { showId: 106, time:"2025-04-22T07:00:00.000Z" },
   ],
-  "2025-6-01":[
-    {
-    "showId": 107,
-      "time":"2025-06-01T01:00:00.000Z",
-    
-    },
-    {
-    "showId": 108,
-      "time": "2025-06-01T03:00:00.000Z",
-      
-    },
-    {
-    "showId": 109,
-      "time": "2025-06-01T07:00:00.000Z",
-     
-    },
-
+  "2025-06-01": [
+    { showId: 107, time:"2025-06-01T01:00:00.000Z" },
+    { showId: 108, time:"2025-06-01T03:00:00.000Z" },
+    { showId: 109, time:"2025-06-01T07:00:00.000Z" },
   ],
-  "2025-6-19":[
-    {
-    "showId": 110,
-      "time":"2025-06-19T01:00:00.000Z",
-     
-    },
-    {
-    "showId": 111,
-      "time": "2025-06-19T03:00:00.000Z",
-   
-    },
-    {
-    "showId": 112,
-      "time": "2025-06-19T07:00:00.000Z",
-    
-    },
-
+  "2025-06-19": [
+    { showId: 110, time:"2025-06-19T01:00:00.000Z" },
+    { showId: 111, time:"2025-06-19T03:00:00.000Z" },
+    { showId: 112, time:"2025-06-19T07:00:00.000Z" },
   ],
-  "2025-4-19":[
-    {
-    "showId": 113,
-      "time":"2025-04-19T01:00:00.000Z",
-     
-    },
-    {
-    "showId": 114,
-      "time": "2025-04-19T03:00:00.000Z",
-   
-    },
-    {
-    "showId": 115,
-      "time": "2025-04-19T07:00:00.000Z",
-    
-    },
-
+  "2025-04-19": [
+    { showId: 113, time:"2025-04-19T01:00:00.000Z" },
+    { showId: 114, time:"2025-04-19T03:00:00.000Z" },
+    { showId: 115, time:"2025-04-19T07:00:00.000Z" },
   ],
-  "2025-08-10":[
-    {
-    "showId": 116,
-      "time":"2025-08-10T01:00:00.000Z",
-     
-    },
-    {
-    "showId": 117,
-      "time": "2025-08-10T03:00:00.000Z",
-   
-    },
-    {
-    "showId": 118,
-      "time": "2025-08-10T07:00:00.000Z",
-    
-    },
-
+  "2025-08-10": [
+    { showId: 116, time:"2025-08-10T01:00:00.000Z" },
+    { showId: 117, time:"2025-08-10T03:00:00.000Z" },
+    { showId: 118, time:"2025-08-10T07:00:00.000Z" },
   ],
-  "2025-08-15":[
-    {
-    "showId": 119,
-      "time":"2025-08-15T01:00:00.000Z",
-     
-    },
-    {
-    "showId": 120,
-      "time": "2025-08-15T03:00:00.000Z",
-   
-    },
-    {
-    "showId": 121,
-      "time": "2025-08-15T07:00:00.000Z",
-    
-    },
-
+  "2025-08-15": [
+    { showId: 119, time:"2025-08-15T01:00:00.000Z" },
+    { showId: 120, time:"2025-08-15T03:00:00.000Z" },
+    { showId: 121, time:"2025-08-15T07:00:00.000Z" },
   ],
-  "2025-09-17":[
-    {
-    "showId": 122,
-      "time":"2025-09-17T01:00:00.000Z",
-    
-    },
-    {
-    "showId": 123,
-      "time": "2025-09-17T03:00:00.000Z",
-   
-    },
-    {
-    "showId": 124,
-      "time": "2025-09-17T07:00:00.000Z",
-    
-    },
-
+  "2025-09-17": [
+    { showId: 122, time:"2025-09-17T01:00:00.000Z" },
+    { showId: 123, time:"2025-09-17T03:00:00.000Z" },
+    { showId: 124, time:"2025-09-17T07:00:00.000Z" },
   ]
 }
+
 export const dummyDashboardDate = {
   totalBookings: 14,
   totalRevenue: 1517,
@@ -462,6 +464,7 @@ export const dummyBookingData = [
     amount: 118,
     bookedSeats: ["D1", "D2"],
     isPaid: false,
+      status: "Pending",
   },
   {
     _id: "B002",
@@ -475,6 +478,7 @@ export const dummyBookingData = [
     amount: 99, // 1 seat * 99
     bookedSeats: ["A1"],
     isPaid: true,
+    status: "Confirmed",
   },
   {
     _id: "B003",
@@ -488,6 +492,7 @@ export const dummyBookingData = [
     amount: 147, // 3 seats * 49
     bookedSeats: ["A1", "A2", "A3"],
     isPaid: false,
+     status: "Pending",
   },
   {
     _id: "B004",
@@ -501,6 +506,7 @@ export const dummyBookingData = [
     amount: 240, // 2 seats * 120
     bookedSeats: ["B1", "B2"],
     isPaid: true,
+      status: "Confirmed",
   },
   {
     _id: "B005",
@@ -514,6 +520,7 @@ export const dummyBookingData = [
     amount: 140,
     bookedSeats: ["C1", "C2", "C3"],
     isPaid: false,
+       status: "Pending",
   },
 ];
 
