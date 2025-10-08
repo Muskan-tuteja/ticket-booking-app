@@ -16,7 +16,7 @@ const MovieCard = ({ movie }) => {
   const badge = isNowShowing ? 'Now Showing' : 'Coming Soon'
 
   return (
-    <div className='flex flex-col justify-between p-3 bg-gray-800 rounded-2xl hover:-translate-y-1 transition duration-300 w-66 relative'>
+    <div className='flex flex-col justify-between p-3 bg-gray-800 rounded-2xl hover:-translate-y-1 transition duration-300 w-full sm:w-60 md:w-66 relative'>
       
       {/* Badge */}
       <span className='absolute top-3 left-3 bg-primary text-xs text-white px-2 py-1 rounded-full'>
@@ -41,7 +41,7 @@ const MovieCard = ({ movie }) => {
         }}
         src={movie.backdrop_path}
         alt={`${movie.title} Poster`}
-        className='rounded-lg h-52 w-full object-cover object-right-bottom cursor-pointer'
+        className='rounded-lg h-52 sm:h-56 md:h-52 w-full object-cover cursor-pointer'
       />
 
       {/* Movie Info */}

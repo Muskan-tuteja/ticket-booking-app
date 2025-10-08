@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-14">
         <div className="md:max-w-96">
           <img alt="logo" className="w-36 h-auto" src={assets.logo} />
-          <p className="mt-6 text-sm">
+          <p className="mt-6 text-xs sm:text-sm">
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
             scrambled it to make a type specimen book.
@@ -17,7 +17,7 @@ const Footer = () => {
                         <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/refs/heads/main/assets/appDownload/appleStoreBtnBlack.svg" alt="app store" className="h-10 w-auto" />
                     </div>
         </div>
-        <div className="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
+        <div className="flex-1 flex flex-col sm:flex-row items-start sm:justify-end gap-8 sm:gap-20 md:gap-40">
           <div>
             <h2 className="font-semibold mb-5">Company</h2>
             <ul className="text-sm space-y-2">
