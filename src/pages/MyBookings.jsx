@@ -4,7 +4,7 @@ import BlurCircle from "../components/BlurCircle";
 import isoTimeFormat from "../libaray/isoTimeFormat";
 
 const MyBookings = () => {
-  const currency = import.meta.env.VITE_CURRENCY;
+  const currency = import.meta.env.VITE_CURRENCY || "₹";
   const [booking, setBooking] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -33,6 +33,9 @@ const MyBookings = () => {
     day: "numeric",
   });
 
+  // Calculate total price
+  const totalPrice = booking.seats.reduce((acc, seat) => acc + seat.price, 0);
+
   return (
     <div className="relative px-6 md:px-16 lg:px-40 pt-30 md:pt-40 min-h-[80vh]">
       <BlurCircle top="100px" left="100px" />
@@ -49,15 +52,11 @@ const MyBookings = () => {
           />
           <div className="flex flex-col p-4">
             <p className="text-lg font-semibold">{booking.movie.title}</p>
-            <p className="text-gray-400 text-sm">
-              {booking.movie.runtime} mins
-            </p>
+            <p className="text-gray-400 text-sm">{booking.movie.runtime} mins</p>
 
             <p className="text-gray-400 text-sm mt-auto">
               {formattedDate} at{" "}
-              <span>
-                {isoTimeFormat(booking.time)}
-              </span>
+              <span>{isoTimeFormat(booking.time)}</span>
             </p>
           </div>
         </div>
@@ -66,7 +65,7 @@ const MyBookings = () => {
           <div className="flex items-center gap-4">
             <p className="text-2xl font-semibold mb-3">
               {currency}
-              {booking.seats.length * 200}
+              {totalPrice}
             </p>
             <button
               onClick={() => alert("Payment Successful!")}
@@ -74,19 +73,24 @@ const MyBookings = () => {
             >
               Pay Now
             </button>
-             {/* Cancel Button */}
-  <button
-    onClick={() => {
-      if (window.confirm("Are you sure you want to cancel this ticket?")) {
-        localStorage.removeItem("myBooking"); // remove booking
-        setBooking(null); // update state
-        alert("Ticket cancelled successfully!");
-      }
-    }}
-    className="bg-red-500 px-4 py-1.5 mb-3 text-sm rounded-full font-medium cursor-pointer text-white hover:bg-red-600 transition"
-  >
-    Cancel Ticket
-  </button>
+
+            {/* Cancel Button */}
+            <button
+              onClick={() => {
+                if (
+                  window.confirm(
+                    "Are you sure you want to cancel this ticket?"
+                  )
+                ) {
+                  localStorage.removeItem("myBooking"); // remove booking
+                  setBooking(null); // update state
+                  alert("Ticket cancelled successfully!");
+                }
+              }}
+              className="bg-red-500 px-4 py-1.5 mb-3 text-sm rounded-full font-medium cursor-pointer text-white hover:bg-red-600 transition"
+            >
+              Cancel Ticket
+            </button>
           </div>
 
           <div className="text-sm">
@@ -95,8 +99,14 @@ const MyBookings = () => {
               {booking.seats.length}
             </p>
             <p>
-              <span className="text-gray-400">Seat Number:</span>{" "}
-              {booking.seats.join(", ")}
+              <span className="text-gray-400">Seats:</span>{" "}
+              {booking.seats
+                .map((s) => `${s.seatId} (${s.type}, ${currency}${s.price})`)
+                .join(", ")}
+            </p>
+            <p className="mt-1 font-semibold">
+              <span className="text-gray-400">Total Price:</span> {currency}
+              {totalPrice}
             </p>
           </div>
         </div>

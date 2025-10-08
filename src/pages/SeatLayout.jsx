@@ -14,8 +14,16 @@ const SeatLayout = () => {
   const [selectedTime, setSelectedTime] = useState(null);
   const [show, setShow] = useState(null);
   const [timeSlots, setTimeSlots] = useState([]);
-
   const navigate = useNavigate();
+
+  // Seat tiers
+  const VIP_ROWS = ["A", "B"];
+  const REGULAR_ROWS = ["C", "D", "E"];
+  const ECONOMY_ROWS = ["F", "G", "H", "I", "J"];
+
+  const VIP_PRICE = 500;
+  const REGULAR_PRICE = 350;
+  const ECONOMY_PRICE = 200;
 
   const getShow = async () => {
     const showData = dummyShowData.find((show) => show._id === id);
@@ -28,34 +36,31 @@ const SeatLayout = () => {
     getShow();
   }, []);
 
-  // ✅ Fix for "No timings available"
   useEffect(() => {
     if (show?.dateTime) {
-      // Remove leading zeros (2025-05-22 -> 2025-5-22)
       const normalizedDate = date.replace(/\b0(\d)\b/g, "$1");
       const allDates = Object.keys(show.dateTime);
-
-      // find date ignoring leading zeros
       const matchedDate = allDates.find((d) => d === normalizedDate) || allDates[0];
       setTimeSlots(show.dateTime[matchedDate] || []);
     }
   }, [show, date]);
 
-  const handleSeatClick = (seatId) => {
+  // Handle seat click with seat type & price
+  const handleSeatClick = (seatId, seatType, seatPrice) => {
     if (!selectedTime) {
       toast("Please select time first");
       return;
     }
 
-    if (!selectedSeats.includes(seatId) && selectedSeats.length >= 4) {
+    if (!selectedSeats.some((s) => s.seatId === seatId) && selectedSeats.length >= 4) {
       toast("You can only select 4 seats");
       return;
     }
 
     setSelectedSeats((prev) =>
-      prev.includes(seatId)
-        ? prev.filter((seat) => seat !== seatId)
-        : [...prev, seatId]
+      prev.some((s) => s.seatId === seatId)
+        ? prev.filter((s) => s.seatId !== seatId)
+        : [...prev, { seatId, type: seatType, price: seatPrice }]
     );
   };
 
@@ -63,35 +68,59 @@ const SeatLayout = () => {
     if (!selectedTime || selectedSeats.length === 0)
       return toast("Please select time and seats first");
 
+    const totalPrice = selectedSeats.reduce((acc, s) => acc + s.price, 0);
+
     const bookingData = {
       movie: show.movie,
       date: date,
       time: selectedTime.raw,
       seats: selectedSeats,
+      totalPrice,
     };
 
     localStorage.setItem("myBooking", JSON.stringify(bookingData));
     navigate("/my-bookings");
   };
 
+  // Render seats
   const renderSeats = (row, count = 9) => (
     <div key={row} className="flex gap-2 mt-2">
-      <div className="flex flex-wrap items-center justify-center gap-2">
-        {Array.from({ length: count }, (_, i) => {
-          const seatId = `${row}${i + 1}`;
-          return (
-            <button
-              key={seatId}
-              onClick={() => handleSeatClick(seatId)}
-              className={`h-8 w-8 rounded border border-primary/60 cursor-pointer ${
-                selectedSeats.includes(seatId) ? "bg-primary text-white" : ""
-              }`}
-            >
-              {seatId}
-            </button>
-          );
-        })}
-      </div>
+      {Array.from({ length: count }, (_, i) => {
+        const seatId = `${row}${i + 1}`;
+        let seatType = "Economy";
+        let seatPrice = ECONOMY_PRICE;
+        let seatClass = "border-gray-400 text-gray-400 hover:bg-gray-400 hover:text-black";
+
+        if (VIP_ROWS.includes(row)) {
+          seatType = "VIP";
+          seatPrice = VIP_PRICE;
+          seatClass = "border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-black";
+        } else if (REGULAR_ROWS.includes(row)) {
+          seatType = "Regular";
+          seatPrice = REGULAR_PRICE;
+          seatClass = "border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white";
+        }
+
+        const isSelected = selectedSeats.some((s) => s.seatId === seatId);
+        const selectedClass =
+          seatType === "VIP"
+            ? "bg-yellow-500 text-black"
+            : seatType === "Regular"
+            ? "bg-blue-500 text-white"
+            : "bg-gray-400 text-black";
+
+        return (
+          <button
+            key={seatId}
+            onClick={() => handleSeatClick(seatId, seatType, seatPrice)}
+            className={`h-8 w-8 rounded border cursor-pointer ${
+              isSelected ? selectedClass : seatClass
+            }`}
+          >
+            {seatId}
+          </button>
+        );
+      })}
     </div>
   );
 
@@ -127,6 +156,8 @@ const SeatLayout = () => {
             <p className="text-sm px-6 text-gray-500">No timings available</p>
           )}
         </div>
+
+        
       </div>
 
       {/* RIGHT SECTION */}
