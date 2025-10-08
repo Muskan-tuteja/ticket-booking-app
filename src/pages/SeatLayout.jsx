@@ -8,41 +8,50 @@ import BlurCircle from "../components/BlurCircle";
 import { toast } from "react-hot-toast";
 
 const SeatLayout = () => {
-  const groupRows = [["A","B"],["C","D"],["E","F"],["G","H"],["I","J"]];
+  const groupRows = [["A", "B"], ["C", "D"], ["E", "F"], ["G", "H"], ["I", "J"]];
   const { id, date } = useParams();
   const [selectedSeats, setSelectedSeats] = useState([]);
   const [selectedTime, setSelectedTime] = useState(null);
   const [show, setShow] = useState(null);
+  const [timeSlots, setTimeSlots] = useState([]);
 
   const navigate = useNavigate();
 
   const getShow = async () => {
-    const show = dummyShowData.find((show) => show._id === id);
-    if (show) setShow({ movie: show, dateTime: dummyDateTimeData });
+    const showData = dummyShowData.find((show) => show._id === id);
+    if (showData) {
+      setShow({ movie: showData, dateTime: dummyDateTimeData });
+    }
   };
 
-  useEffect(() => { getShow(); }, []);
+  useEffect(() => {
+    getShow();
+  }, []);
 
-useEffect(() => {
-  if (show?.dateTime) {
-    // URL date ko normalize karo (remove leading zeros)
-    const urlDate = date.replace(/-0/g, "-"); // '2025-05-22' -> '2025-5-22'
-    const currentDate = show.dateTime[urlDate] ? urlDate : Object.keys(show.dateTime)[0];
+  // ✅ Fix for "No timings available"
+  useEffect(() => {
+    if (show?.dateTime) {
+      // Remove leading zeros (2025-05-22 -> 2025-5-22)
+      const normalizedDate = date.replace(/\b0(\d)\b/g, "$1");
+      const allDates = Object.keys(show.dateTime);
 
-    if (show.dateTime[currentDate]?.length > 0) {
-      const firstTime = show.dateTime[currentDate][0];
-      setSelectedTime({ raw: firstTime.time, display: isoTimeFormat(firstTime.time) });
+      // find date ignoring leading zeros
+      const matchedDate = allDates.find((d) => d === normalizedDate) || allDates[0];
+      setTimeSlots(show.dateTime[matchedDate] || []);
     }
-  }
-}, [show, date]);
-
-
-
+  }, [show, date]);
 
   const handleSeatClick = (seatId) => {
-    if (!selectedTime) return toast("Please select time first");
-    if (!selectedSeats.includes(seatId) && selectedSeats.length >= 4)
-      return toast("You can only select 4 seats");
+    if (!selectedTime) {
+      toast("Please select time first");
+      return;
+    }
+
+    if (!selectedSeats.includes(seatId) && selectedSeats.length >= 4) {
+      toast("You can only select 4 seats");
+      return;
+    }
+
     setSelectedSeats((prev) =>
       prev.includes(seatId)
         ? prev.filter((seat) => seat !== seatId)
@@ -57,9 +66,10 @@ useEffect(() => {
     const bookingData = {
       movie: show.movie,
       date: date,
-      time: selectedTime.raw, // raw ISO
+      time: selectedTime.raw,
       seats: selectedSeats,
     };
+
     localStorage.setItem("myBooking", JSON.stringify(bookingData));
     navigate("/my-bookings");
   };
@@ -89,11 +99,12 @@ useEffect(() => {
 
   return (
     <div className="flex flex-col md:flex-row px-6 md:px-16 lg:px-40 py-30 md:pt-50">
+      {/* LEFT SIDEBAR */}
       <div className="w-60 bg-primary/10 border border-primary/20 rounded-lg py-10 h-max md:sticky md:top-30">
         <p className="text-lg font-semibold px-6">Available Timings</p>
         <div className="mt-5 space-y-1">
-          {show?.dateTime?.[date]?.length > 0 ? (
-            show.dateTime[date].map((item) => (
+          {timeSlots.length > 0 ? (
+            timeSlots.map((item) => (
               <div
                 key={item.time}
                 onClick={() =>
@@ -113,16 +124,19 @@ useEffect(() => {
               </div>
             ))
           ) : (
-            <p className="text-gray-400 px-6 text-sm">No show times available</p>
+            <p className="text-sm px-6 text-gray-500">No timings available</p>
           )}
         </div>
       </div>
 
+      {/* RIGHT SECTION */}
       <div className="relative flex-1 flex flex-col items-center max-md:mt-16">
         <BlurCircle top="-100px" left="-100px" />
         <BlurCircle bottom="0px" right="0px" />
+
         <h1 className="text-2xl font-semibold mb-4">Select your seat</h1>
         <p className="text-gray-400 text-sm mb-6">SCREEN SIDE</p>
+
         <div className="flex flex-col items-center mt-10 text-xs text-gray-300">
           <div className="grid grid-cols-2 md:grid-cols-1 gap-8 md:gap-2 mb-6">
             {groupRows[0].map((row) => renderSeats(row))}
@@ -133,6 +147,7 @@ useEffect(() => {
             ))}
           </div>
         </div>
+
         <button
           onClick={handleCheckout}
           className="flex items-center gap-1 mt-20 px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer active:scale-95"

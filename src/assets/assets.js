@@ -201,7 +201,7 @@ export const dummyShowData = [
     "release_date": "2025-08-10",
     "original_language": "en",
     "tagline" : "Hack the world",
-    "vote_average":7.5,
+    "vote_average":5.5,
     "vote_count": 1934,
     "runtime":117
   },
@@ -221,7 +221,7 @@ export const dummyShowData = [
     "release_date": "2025-08-15",
     "original_language": "en",
     "tagline" : "Face your fears",
-    "vote_average":7.5,
+    "vote_average":9.5,
     "vote_count": 2234,
     "runtime":117
   },
@@ -241,7 +241,7 @@ export const dummyShowData = [
     "release_date": "2025-09-17",
     "original_language": "en",
     "tagline" : "Unlock the unknown",
-    "vote_average":7.5,
+    "vote_average":8.5,
     "vote_count": 1234,
     "runtime":127
   },
@@ -345,14 +345,20 @@ export const dummyShowData = [
 }
 
 ]
-// Example for a show
-const seats = [
+
+// assets/assets.js me add karein
+export const seatsData = [
   { id: "A1", type: "VIP", bookedBy: null },
   { id: "A2", type: "VIP", bookedBy: null },
+  { id: "A3", type: "VIP", bookedBy: null },
   { id: "B1", type: "Regular", bookedBy: null },
   { id: "B2", type: "Regular", bookedBy: null },
-  // ... baaki seats
+  { id: "B3", type: "Regular", bookedBy: null },
+  { id: "C1", type: "Regular", bookedBy: null },
+  { id: "C2", type: "Regular", bookedBy: null },
+  { id: "C3", type: "Regular", bookedBy: null },
 ];
+
 
 
 
