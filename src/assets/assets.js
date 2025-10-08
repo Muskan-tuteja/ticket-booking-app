@@ -346,18 +346,7 @@ export const dummyShowData = [
 
 ]
 
-// assets/assets.js me add karein
-export const seatsData = [
-  { id: "A1", type: "VIP", bookedBy: null },
-  { id: "A2", type: "VIP", bookedBy: null },
-  { id: "A3", type: "VIP", bookedBy: null },
-  { id: "B1", type: "Regular", bookedBy: null },
-  { id: "B2", type: "Regular", bookedBy: null },
-  { id: "B3", type: "Regular", bookedBy: null },
-  { id: "C1", type: "Regular", bookedBy: null },
-  { id: "C2", type: "Regular", bookedBy: null },
-  { id: "C3", type: "Regular", bookedBy: null },
-];
+
 
 
 

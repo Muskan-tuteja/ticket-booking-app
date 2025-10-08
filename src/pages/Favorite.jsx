@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { dummyShowData } from "../assets/assets";
 import MovieCard from "../components/MovieCard";
 import BlurCircle from "../components/BlurCircle";
 
@@ -9,8 +8,7 @@ const Favorite = () => {
   const [selectedGenre, setSelectedGenre] = useState("All");
 
   useEffect(() => {
-    const favIds = JSON.parse(localStorage.getItem("favorites") || "[]");
-    const favMovies = dummyShowData.filter((movie) => favIds.includes(movie._id));
+    const favMovies = JSON.parse(localStorage.getItem("favorites") || "[]");
     setFavorites(favMovies);
   }, []);
 
@@ -33,9 +31,6 @@ const Favorite = () => {
 
       <h1 className="text-lg font-medium my-4">Your Favorite Movies</h1>
 
-      
-    
-
       {/* Movie Grid */}
       {filteredMovies.length > 0 ? (
         <div className="flex flex-wrap max-sm:justify-center gap-8">
@@ -45,7 +40,7 @@ const Favorite = () => {
         </div>
       ) : (
         <div className="flex flex-col items-center justify-center h-64">
-          <h1 className="text-2xl font-semibold text-center">No Favorites Found</h1>
+          <h1 className="text-2xl font-semibold text-center">No Favorites Found !</h1>
         </div>
       )}
     </div>

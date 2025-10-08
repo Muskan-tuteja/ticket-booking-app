@@ -1,4 +1,4 @@
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { dummyDateTimeData, dummyShowData } from "../assets/assets";
 import BlurCircle from "../components/BlurCircle";
@@ -9,25 +9,46 @@ import MovieCard from "../components/MovieCard";
 import Loading from "../components/Loading";
 
 const MovieDetails = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const { id } = useParams();
   const [show, setShow] = useState(null);
+  const [isFavorite, setIsFavorite] = useState(false);
 
+  // Load show data
   const getShow = async () => {
     const show = dummyShowData.find((show) => show._id === id);
-    if(show){
+    if (show) {
       setShow({
-      movie: show,
-      dateTime: dummyDateTimeData,
-    });
-
+        movie: show,
+        dateTime: dummyDateTimeData,
+      });
     }
-    
   };
+
+  // Load favorite status from localStorage
   useEffect(() => {
     getShow();
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    setIsFavorite(favorites.some((movie) => movie._id === id));
   }, [id]);
+
+  const toggleFavorite = () => {
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    let updatedFavorites;
+
+    if (isFavorite) {
+      // Remove from favorites
+      updatedFavorites = favorites.filter((movie) => movie._id !== id);
+      setIsFavorite(false);
+    } else {
+      // Add to favorites
+      updatedFavorites = [...favorites, show.movie];
+      setIsFavorite(true);
+    }
+
+    localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+  };
+
   return show ? (
     <div className="px-6 md:px-16 lg:px-40 pt-30 md:pt-50">
       <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
@@ -65,9 +86,13 @@ const MovieDetails = () => {
             >
               Buy Tickets
             </a>
-            <button className="bg-gray-700 p-2.5 rounded-full transition cursor-pointer active:scale-95">
-              <Heart className={`w-5 h-5`} />
-            </button>
+           <button onClick={toggleFavorite} className="p-2.5 rounded-full cursor-pointer active:scale-95 bg-gray-800">
+  <Heart
+    className="w-5 h-5"
+    stroke={isFavorite ? "red" : "white"}   // outline color
+    fill={isFavorite ? "red" : "none"}      // full fill
+  />
+</button>
           </div>
         </div>
       </div>
@@ -94,11 +119,20 @@ const MovieDetails = () => {
         ))}
       </div>
       <div className="flex justify-center mt-20">
-        <button onClick={()=> {navigate('/movies'); scrollTo(0,0)}} className="px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer">Show More</button>
-
+        <button
+          onClick={() => {
+            navigate("/movies");
+            scrollTo(0, 0);
+          }}
+          className="px-10 py-3 text-sm bg-primary hover:bg-primary-dull transition rounded-md font-medium cursor-pointer"
+        >
+          Show More
+        </button>
       </div>
     </div>
-  ) : <Loading/>
+  ) : (
+    <Loading />
+  );
 };
 
 export default MovieDetails;
