@@ -43,7 +43,7 @@ const MyBookings = () => {
 
       <h1 className="text-lg font-semibold mb-4">My Booking</h1>
 
-      <div className="flex flex-col md:flex-row justify-between bg-primary/8 border border-primary/20 rounded-lg mt-4 p-2 max-w-3xl">
+      <div className="flex flex-col md:flex-row justify-between bg-primary/8 border border-primary/20 rounded-lg mt-4 p-2 max-w-3xl gap-4">
         <div className="flex flex-col md:flex-row">
           <img
             src={booking.movie.poster_path}
@@ -61,7 +61,7 @@ const MyBookings = () => {
           </div>
         </div>
 
-        <div className="flex flex-col md:items-end md:text-right justify-between p-4">
+        <div className="flex flex-col md:items-end md:text-right justify-between p-4 w-full md:w-auto">
           <div className="flex items-center gap-4">
             <p className="text-2xl font-semibold mb-3">
               {currency}
@@ -98,12 +98,12 @@ const MyBookings = () => {
               <span className="text-gray-400">Total Tickets:</span>{" "}
               {booking.seats.length}
             </p>
-            <p>
-              <span className="text-gray-400">Seats:</span>{" "}
-              {booking.seats
-                .map((s) => `${s.seatId} (${s.type}, ${currency}${s.price})`)
-                .join(", ")}
-            </p>
+           <p className="overflow-x-auto whitespace-nowrap">
+  {booking.seats
+    .map((s) => `${s.seatId} (${s.type}, ${currency}${s.price})`)
+    .join(", ")}
+</p>
+
             <p className="mt-1 font-semibold">
               <span className="text-gray-400">Total Price:</span> {currency}
               {totalPrice}

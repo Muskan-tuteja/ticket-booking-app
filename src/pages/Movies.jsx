@@ -16,9 +16,7 @@ const Movies = () => {
       {nowShowing.length > 0 && (
         <>
           <h1 className='text-lg font-medium my-4 md:my-6'>Now Showing</h1>
-        
-
-          <div className='flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10'>
+          <div className='flex flex-wrap max-sm:justify-center gap-8'>
             {nowShowing.map(movie => <MovieCard movie={movie} key={movie._id} />)}
           </div>
         </>
@@ -27,7 +25,7 @@ const Movies = () => {
       {comingSoon.length > 0 && (
         <>
           <h1 className='text-lg font-medium my-4 mt-10'></h1>
-          <div className='flex flex-wrap justify-center gap-6 sm:gap-8 md:gap-10 mt-10'>
+          <div className='flex flex-wrap max-sm:justify-center gap-8'>
             {comingSoon.map(movie => <MovieCard movie={movie} key={movie._id} />)}
           </div>
         </>
