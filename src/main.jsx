@@ -6,7 +6,7 @@ import { HashRouter } from "react-router-dom";
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <HashRouter>
+    <HashRouter basename="/ticket-booking-app">
     <App />
   </HashRouter>
   // <BrowserRouter basename="/ticket-booking-app" >
