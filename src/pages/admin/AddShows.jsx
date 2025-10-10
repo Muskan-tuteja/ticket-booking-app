@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { dummyShowData } from "../../assets/assets";
 import Loading from "../../components/Loading";
-import Title from "../../components/admin/Title";
+// import Title from "../../components/admin/Title";
 import { CheckIcon, StarIcon } from "lucide-react";
 import { KConverter } from "../../libaray/KConverter";
 import DeleteIcon from '@mui/icons-material/Delete';
