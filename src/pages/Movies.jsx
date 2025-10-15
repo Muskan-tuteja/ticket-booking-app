@@ -1,7 +1,7 @@
-import React from 'react'
-import { dummyShowData } from '../assets/assets'
-import MovieCard from '../components/MovieCard'
-import BlurCircle from '../components/BlurCircle'
+import React from 'react';
+import { dummyShowData } from '../assets/assets';
+import MovieCard from '../components/MovieCard';
+import BlurCircle from '../components/BlurCircle';
 
 const Movies = () => {
   const today = new Date();
@@ -16,7 +16,7 @@ const Movies = () => {
       {nowShowing.length > 0 && (
         <>
           <h1 className='text-lg font-medium my-4 md:my-6'>Now Showing</h1>
-          <div className='flex flex-wrap max-sm:justify-center gap-8'>
+          <div className='flex flex-wrap justify-center md:justify-start gap-8'>
             {nowShowing.map(movie => <MovieCard movie={movie} key={movie._id} />)}
           </div>
         </>
@@ -24,14 +24,14 @@ const Movies = () => {
 
       {comingSoon.length > 0 && (
         <>
-          <h1 className='text-lg font-medium my-4 mt-10'></h1>
-          <div className='flex flex-wrap max-sm:justify-center gap-8'>
+          <h1 className='text-lg font-medium my-4 mt-10'>Coming Soon</h1>
+          <div className='flex flex-wrap justify-center md:justify-start gap-8'>
             {comingSoon.map(movie => <MovieCard movie={movie} key={movie._id} />)}
           </div>
         </>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Movies
+export default Movies;

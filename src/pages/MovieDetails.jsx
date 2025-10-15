@@ -86,13 +86,17 @@ const MovieDetails = () => {
             >
               Buy Tickets
             </a>
-           <button onClick={toggleFavorite} className="p-2.5 rounded-full cursor-pointer active:scale-95 bg-gray-800">
+           <button 
+  onClick={toggleFavorite} 
+  className="p-2.5 rounded-full cursor-pointer active:scale-95 bg-gray-800"
+>
   <Heart
     className="w-5 h-5"
-    stroke={isFavorite ? "red" : "white"}   // outline color
-    fill={isFavorite ? "red" : "none"}      // full fill
+    stroke={isFavorite ? "red" : "white"}
+    fill={isFavorite ? "red" : "none"}
   />
 </button>
+
           </div>
         </div>
       </div>

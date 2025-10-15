@@ -12,11 +12,7 @@ const Favorite = () => {
     setFavorites(favMovies);
   }, []);
 
-  // Get unique genres
-  const genres = [
-    "All",
-    ...new Set(favorites.flatMap((movie) => movie.genres.map((g) => g.name))),
-  ];
+  const genres = ["All", ...new Set(favorites.flatMap((movie) => movie.genres.map((g) => g.name)))];
 
   const filteredMovies = favorites.filter((movie) => {
     const matchesSearch = movie.title.toLowerCase().includes(searchTerm.toLowerCase());
@@ -31,16 +27,36 @@ const Favorite = () => {
 
       <h1 className="text-lg font-medium my-4">Your Favorite Movies</h1>
 
+      {/* Search & Genre Filter */}
+      <div className="flex flex-col md:flex-row gap-4 mb-6">
+        <input
+          type="text"
+          placeholder="Search movies..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="px-4 py-2 border rounded-md w-full md:w-1/2 outline-none"
+        />
+        <select
+          value={selectedGenre}
+          onChange={(e) => setSelectedGenre(e.target.value)}
+          className="px-4 py-2 border rounded-md w-full md:w-1/4 outline-none"
+        >
+          {genres.map((genre, index) => (
+            <option className="bg-gray-800"key={index} value={genre}>{genre}</option>
+          ))}
+        </select>
+      </div>
+
       {/* Movie Grid */}
       {filteredMovies.length > 0 ? (
-        <div className="flex flex-wrap max-sm:justify-center gap-8">
+        <div className="flex flex-wrap justify-center md:justify-start gap-8">
           {filteredMovies.map((movie) => (
-            <MovieCard key={movie._id} movie={movie} />
+            <MovieCard key={movie._id} movie={movie}  />
           ))}
         </div>
       ) : (
         <div className="flex flex-col items-center justify-center h-64">
-          <h1 className="text-2xl font-semibold text-center">No Favorites Found !</h1>
+          <h1 className="text-2xl font-semibold text-center">No Favorites Found!</h1>
         </div>
       )}
     </div>

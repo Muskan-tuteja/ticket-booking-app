@@ -19,19 +19,20 @@ const AddShows = () => {
     setNowPlayingMovies(dummyShowData);
   };
 
-  const handleDateTimeAdd = () => {
-    if (!dateTimeInput) return;
-    const [date, time] = dateTimeInput.split("T");
-    if (!date || !time) return;
+ const handleDateTimeAdd = () => {
+  if (!dateTimeInput) return;
+  const [date, time] = dateTimeInput.split("T");
+  if (!date || !time) return;
 
-    setDateTimeSelection((prev) => {
-      const times = prev[date] || [];
-      if (!times.includes(times)) {
-        return { ...prev, [date]: [...times, time] };
-      }
-      return prev;
-    });
-  };
+  setDateTimeSelection((prev) => {
+    const times = prev[date] || [];
+    if (!times.includes(time)) {   // ✅ Corrected here
+      return { ...prev, [date]: [...times, time] };
+    }
+    return prev;
+  });
+};
+
   const handleRemoveTime = (date, time) => {
     setDateTimeSelection((prev) => {
       const filteredTimes = prev[date].filter((t) => t !== time);
