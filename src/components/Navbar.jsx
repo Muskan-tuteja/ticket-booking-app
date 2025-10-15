@@ -5,56 +5,71 @@ import { MenuIcon, SearchIcon, XIcon } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
- const [success, setSuccess] = useState(false);
+  const [searchTerm, setSearchTerm] = useState(""); // ✅ searchTerm defined
+  const [success, setSuccess] = useState(false);
+
   const handleDummyLogin = () => {
     const email = prompt("Enter your email (e.g. test@example.com):");
-
     if (!email) return alert("Login cancelled!");
-
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) return alert("Please enter a valid email!");
-
-    // Login successful → show green message
     setSuccess(true);
-    setTimeout(() => setSuccess(false), 3000); // auto-hide after 3 sec
+    setTimeout(() => setSuccess(false), 3000);
   };
 
-
-
   return (
-    <div className="fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 md:px-16 lg:px-36 py-5">
+    <div className="fixed top-0 left-0 z-50 w-full flex items-center justify-between px-6 md:px-16 lg:px-36 py-5 h-32 backdrop-blur shadow-md">
+      {/* Logo */}
       <Link to="/" className="max-md:flex-1">
-        <img src={assets.logo} alt="" className="w-36 h-34" />
+        <img src={assets.logo} alt="Logo" className="w-36 h-34" />
       </Link>
 
-      <div className={`max-md:absolute max-md:top-0 max-md:left-0 max-md:font-medium max-md:text-lg z-50 flex flex-col md:flex-row items-center max-md:justify-center gap-8 min-md:px-8 py-3 max-md:h-screen min-md:rounded-full backdrop-blur bg-black/70 md:bg-white/20 md:border border-gray-300/20 overflow-hidden transition-[width] duration-300 ${isOpen ? 'max-md:w-full' : 'max-md:w-0'}`}>
-        <XIcon className="md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer" onClick={()=> setIsOpen(!isOpen)}/>
+      {/* Navbar Links */}
+      <div className={`max-md:absolute max-md:top-0 max-md:left-0 z-50 flex flex-col md:flex-row items-center gap-6 md:gap-8 min-md:px-8 py-3 max-md:h-screen md:rounded-full backdrop-blur md:bg-white/20 max-md:bg-black/70 border border-gray-300/20 overflow-hidden transition-all duration-300 ${isOpen ? 'max-md:w-full' : 'max-md:w-0'}`}>
+        <XIcon className="md:hidden absolute top-6 right-6 w-6 h-6 cursor-pointer" onClick={() => setIsOpen(false)} />
+        <Link onClick={() => { scrollTo(0,0); setIsOpen(false); }} to="/">Home</Link>
+        <Link onClick={() => { scrollTo(0,0); setIsOpen(false); }} to="/movies">Movies</Link>
+        <Link onClick={() => { scrollTo(0,0); setIsOpen(false); }} to="/favorite">Favorites</Link>
 
-        <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/">Home</Link>
-        <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/movies">Movies</Link>
-        <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/">Theaters</Link>
-        <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/">Releases</Link>
-        <Link onClick={()=> {scrollTo(0,0); setIsOpen(false)}} to="/favorite">Favorites</Link>
+        {/* Mobile Search input */}
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="px-3 py-1 border rounded-md w-full md:w-48 mt-2 md:mt-0 outline-none max-md:flex"
+        />
       </div>
 
-      <div className="flex items-center gap-8">
-        <SearchIcon className="max-md:hidden w-6 h-6 cursor-pointer backdrop-blur" />
+      {/* Right side */}
+      <div className="flex items-center gap-4 md:gap-8">
+        {/* Desktop search icon */}
+        <SearchIcon className="max-md:hidden w-6 h-6 cursor-pointer" />
+        {/* Desktop search input */}
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="hidden max-md:flex px-3 py-1 border rounded-md outline-none"
+        />
 
-        {/* Updated dummy login */}
+        {/* Login button */}
         <button
-          className="px-4 py-1 sm:px-7 sm:py-2 bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer backdrop-blur"
+          className="px-4 py-1 sm:px-7 sm:py-2 bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer"
           onClick={handleDummyLogin}
         >
           Login
         </button>
-      </div>
-          {success && (
-        <div className="absolute top-5 right-0 px-4 py-2 bg-green-500 text-white rounded shadow-md">
-          Login Successful!
-        </div>
-      )}
+        {success && (
+          <div className="absolute top-5 right-0 px-4 py-2 bg-green-500 text-white rounded shadow-md">
+            Login Successful!
+          </div>
+        )}
 
-      <MenuIcon className="max-md:ml-4 md:hidden w-8 h-8 cursor-pointer" onClick={()=> setIsOpen(!isOpen)} />
+        {/* Mobile menu toggle */}
+        <MenuIcon className="md:hidden w-8 h-8 cursor-pointer" onClick={() => setIsOpen(!isOpen)} />
+      </div>
     </div>
   );
 };
