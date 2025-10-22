@@ -1,20 +1,57 @@
-<<<<<<< HEAD
-# ticket-booking-app
-=======
-# React + Vite
+# Movie Ticket Booking Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **React-based movie ticket booking platform** that allows users to browse movies, select show timings, choose seats, and manage bookings. The platform also saves booking information locally and displays it in a user-friendly interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Browse a list of movies with poster, title, overview, runtime, and genre information.
+- View available show timings for each movie.
+- Select seats with **VIP, Regular, and Economy** tiers.
+- Maximum 4 seats can be selected per booking.
+- Booking summary with total price calculation.
+- Save booking data in localStorage.
+- View existing bookings and cancel or pay for tickets.
+- Fully responsive UI with mobile and desktop support.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> c3c820f (Start Ticked app)
+- **Frontend:** React, React Router, Tailwind CSS
+- **State Management:** React `useState` and `useEffect`
+- **Notifications:** react-hot-toast
+- **Icons:** lucide-react
+- **Data:** Dummy movie and showtime data (`dummyShowData` and `dummyDateTimeData`)
+
+---
+
+
+---
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://muskan-tuteja.github.io/ticket-booking-app/
+cd movie-ticket-booking
+
+npm install
+
+npm run dev
+
+http://localhost:5174/ticket-booking-app/
+
+---
+
+
+
+---
+
+
+## Screenshots
+
+
+
