@@ -64,6 +64,8 @@ http://localhost:5174/ticket-booking-app/
 <img width="1920" height="1080" alt="Screenshot (205)" src="https://github.com/user-attachments/assets/05aa1f47-aad9-4f8f-aeea-a6280456ee88" />
 
 <img width="1920" height="1080" alt="Screenshot (206)" src="https://github.com/user-attachments/assets/68836c64-9ac8-484f-9d86-900ac5c959d2" />
+![Screenshot 1](https://github.com/your-username/your-repo-name/assets/xxxxxxxx/imagename.png)
+
 
 
 
