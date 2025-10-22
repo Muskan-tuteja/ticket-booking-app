@@ -54,12 +54,16 @@ const MyBookings = () => {
             className="w-full md:w-48 aspect-video object-cover object-bottom rounded"
           />
           <div className="flex flex-col justify-between p-2 md:p-4">
-            <p className="text-lg font-semibold">{booking.movie.title}</p>
-            <p className="text-gray-400 text-sm">{booking.movie.runtime} mins</p>
-            <p className="text-gray-400 text-sm mt-auto">
-              {formattedDate} at <span>{isoTimeFormat(booking.time)}</span>
-            </p>
-          </div>
+  <p className="text-lg font-semibold">{booking.movie.title}</p>
+  <p className="text-gray-400 text-sm">{booking.movie.runtime} mins</p>
+  <p className="text-gray-400 text-sm">
+    {booking.movie.city} • {booking.movie.venue}
+  </p>
+  <p className="text-gray-400 text-sm mt-auto">
+    {formattedDate} at <span>{isoTimeFormat(booking.time)}</span>
+  </p>
+</div>
+
         </div>
 
         {/* Seats & Actions Section */}

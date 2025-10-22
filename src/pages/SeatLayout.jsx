@@ -76,6 +76,7 @@ const SeatLayout = () => {
       time: selectedTime.raw,
       seats: selectedSeats,
       totalPrice,
+      
     };
 
     localStorage.setItem("myBooking", JSON.stringify(bookingData));
@@ -164,6 +165,8 @@ const SeatLayout = () => {
       <div className="relative flex-1 flex flex-col items-center max-md:mt-16">
         <BlurCircle top="-100px" left="-100px" />
         <BlurCircle bottom="0px" right="0px" />
+        <h1 className="text-2xl font-semibold mb-1">{show.movie.title}</h1>
+<p className="text-sm text-gray-500">{show.movie.city} • {show.movie.venue}</p>
 
         <h1 className="text-2xl font-semibold mb-4">Select your seat</h1>
         <p className="text-gray-400 text-sm mb-6">SCREEN SIDE</p>

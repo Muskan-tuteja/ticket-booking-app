@@ -103,7 +103,9 @@ export const dummyShowData = [
     "tagline" : "Be There and be square",
     "vote_average":6.5,
     "vote_count": 98234, 
-    "runtime":114
+    "runtime":114,
+    "city": "Mumbai",
+    "venue": "Wankhede Stadium",
   },
   {
     "_id": "1002",
@@ -123,7 +125,9 @@ export const dummyShowData = [
     "tagline" : "Survive the storm",
     "vote_average":7.5,
     "vote_count": 123435, 
-    "runtime":117
+    "runtime":117,
+    "city": "Jaipur",
+    "venue": "Albert Hall",
   },
   {
     "_id": "1003",
@@ -143,7 +147,9 @@ export const dummyShowData = [
     "tagline" : "Explore the unknown",
     "vote_average":8.5,
     "vote_count": 12342,
-    "runtime":120
+    "runtime":120,
+      "city": "Bengaluru",
+    "venue": "Innovative Film Hall",
   },
   {
     "_id": "1004",
@@ -163,7 +169,9 @@ export const dummyShowData = [
     "tagline" : "Fight for the skies",
     "vote_average":7.5,
     "vote_count": 9234,
-    "runtime":117
+    "runtime":117,
+    "city": "Delhi",
+    "venue": "Indira Gandhi Indoor Stadium",
   },
   {
     "_id": "1005",
@@ -183,7 +191,9 @@ export const dummyShowData = [
     "tagline" : "Forgive and forget",
     "vote_average":7.5,
     "vote_count": 4234,
-    "runtime":117
+    "runtime":117,
+    "city": "Pune",
+    "venue": "Shivaji Park Theater",
   },
   {
     "_id": "1006",
@@ -203,7 +213,9 @@ export const dummyShowData = [
     "tagline" : "Hack the world",
     "vote_average":5.5,
     "vote_count": 1934,
-    "runtime":117
+    "runtime":112,
+    "city": "Hyderabad",
+    "venue": "Cyber Arena",
   },
   {
     "_id": "1007",
@@ -223,7 +235,9 @@ export const dummyShowData = [
     "tagline" : "Face your fears",
     "vote_average":9.5,
     "vote_count": 2234,
-    "runtime":117
+    "runtime":126,
+    "city": "Kolkata",
+    "venue": "Haunted Theater",
   },
   {
     "_id": "1008",
@@ -243,7 +257,9 @@ export const dummyShowData = [
     "tagline" : "Unlock the unknown",
     "vote_average":8.5,
     "vote_count": 1234,
-    "runtime":127
+    "runtime":127,
+    "city": "Chennai",
+    "venue": "Mystery Mansion Hall",
   },
 {
   "_id": "1015",
@@ -262,7 +278,9 @@ export const dummyShowData = [
   "tagline" : "Where dreams meet reality",
   "vote_average":0.0,
   "vote_count": 0, 
-  "runtime":130
+  "runtime":130,
+   "city": "Kochi",
+  "venue": "Autumn Arena"
 },
 
   {
@@ -282,7 +300,9 @@ export const dummyShowData = [
   "tagline" : "Mystery in the air",
   "vote_average":0.0,
   "vote_count": 0, 
-  "runtime":125
+  "runtime":125,
+   "city": "Shimla",
+  "venue": "Winter Wonderland Theater"
 },
 
 {
@@ -302,7 +322,9 @@ export const dummyShowData = [
   "tagline" : "Magic in the winter",
   "vote_average":0.0,
   "vote_count": 0, 
-  "runtime":130
+  "runtime":130,
+  "city": "Lucknow",
+  "venue": "Veer Bhavan"
 },
 {
   "_id": "1014",
@@ -321,7 +343,9 @@ export const dummyShowData = [
   "tagline" : "Dreams take flight",
   "vote_average":0.0,
   "vote_count": 0, 
-  "runtime":138
+  "runtime":138,
+  "city": "Guwahati",
+  "venue": "Sky High Auditorium"
 }
 ,
 {
@@ -341,7 +365,9 @@ export const dummyShowData = [
   "tagline" : "Courage runs in our veins",
   "vote_average":0.0,
   "vote_count": 0, 
-  "runtime":135
+  "runtime":135,
+  "city": "Jaipur",
+  "venue": "Dreamland Cinema"
 }
 
 ]
