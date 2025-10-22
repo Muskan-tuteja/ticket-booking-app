@@ -13,10 +13,10 @@ const HeroSection = () => {
       <div className="flex items-center gap-4 text-gray-300">
         <span>Action | Adventure | Sci-Fi</span>
         <div className="flex items-center gap-1">
-          <CalendarIcon className="w-4.5 h-4.5" /> 2018
+          <CalendarIcon className="w-4.5 h-4.5" /> 2025
         </div>
         <div className="flex items-center gap-1">
-          <ClockIcon className="w-4.5 h-4.5" /> 2h 8m
+          <ClockIcon className="w-4.5 h-4.5" /> 0h 0m
         </div>
       </div>
       <p className="max-w-md text-gray-300">
