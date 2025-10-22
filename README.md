@@ -53,6 +53,7 @@ http://localhost:5174/ticket-booking-app/
 
 ## Screenshots
 
+<<<<<<< HEAD
 <img width="1920" height="1080" alt="Screenshot (200)" src="https://github.com/user-attachments/assets/4d108bbe-9720-452c-a676-3566c3759e1e" />
 
 <img width="1920" height="1080" alt="Screenshot (201)" src="https://github.com/user-attachments/assets/0cc8e399-ae07-40c5-bd00-914aaf3fbb73" />
@@ -75,5 +76,20 @@ http://localhost:5174/ticket-booking-app/
 
 
 
+=======
+###  Home Page
+![Home Page](./Screenshots/Home.png)
+>>>>>>> 3850358 (update readme.md)
 
+### Buy Tickets
+![Buy Tickets](./screenshots/Buyticket.png)
+
+###  Selecte Date
+![Selecte Date](./screenshots/selectdate.png)
+
+### Select seat and time
+![Select seat and time](./screenshots/seat%20time.png)
+
+### My Booking
+![My Booking](./screenshots/mybooking.png)
 
