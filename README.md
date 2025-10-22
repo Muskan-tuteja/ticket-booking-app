@@ -38,16 +38,16 @@ A **React-based movie ticket booking platform** that allows users to browse movi
 
 
 ### Buy Tickets
-![Buy Tickets](./screenshots/Buyticket.png)
+![Buy Tickets](./Screenshots/Buyticket.png)
 
 ###  Selecte Date
-![Selecte Date](./screenshots/selectdate.png)
+![Selecte Date](./Screenshots/selectdate.png)
 
 ### Select seat and time
-![Select seat and time](./screenshots/seat%20time.png)
+![Select seat and time](./Screenshots/seat%20time.png)
 
 ### My Booking
-![My Booking](./screenshots/mybooking.png)
+![My Booking](./Screenshots/mybooking.png)
 
 ## Installation
 
