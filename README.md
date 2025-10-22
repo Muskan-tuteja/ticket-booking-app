@@ -49,6 +49,12 @@ A **React-based movie ticket booking platform** that allows users to browse movi
 ### My Booking
 ![My Booking](./Screenshots/mybooking.png)
 
+
+
+
+## Demo Video
+![Demo Video](https://app.screencastify.com/watch/TUkwAzPZzLpxacOgdrCx?checkOrg=da5a2d09-f8f2-4845-98f5-1d7858d08e3b)
+
 ## Installation
 
 1. Clone the repository:
