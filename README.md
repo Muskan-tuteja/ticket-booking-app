@@ -53,7 +53,8 @@ A **React-based movie ticket booking platform** that allows users to browse movi
 
 
 ## Demo Video
-![Demo Video](https://app.screencastify.com/watch/TUkwAzPZzLpxacOgdrCx?checkOrg=da5a2d09-f8f2-4845-98f5-1d7858d08e3b)
+[Watch Demo Video](https://app.screencastify.com/watch/TUkwAzPZzLpxacOgdrCx?checkOrg=da5a2d09-f8f2-4845-98f5-1d7858d08e3b)
+
 
 ## Installation
 
